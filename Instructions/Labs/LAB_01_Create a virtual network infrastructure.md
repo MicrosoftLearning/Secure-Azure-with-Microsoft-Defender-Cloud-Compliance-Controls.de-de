@@ -16,7 +16,7 @@ Sie können eine Netzwerksicherheitsgruppe verwenden, um eingehenden und ausgehe
 
 ---
 
-## Qualifikationsaufgabe
+## Qualifikationsaufgaben
 
 - Erstellen Sie eine Netzwerksicherheitsgruppe und Sicherheitsregeln.
   
@@ -168,7 +168,7 @@ Eine Netzwerksicherheitsgruppe (NSG) schützt den Netzwerkdatenverkehr in Ihrem 
    |Einstellung|Wert|
    |---|---|
    |`Source`|Übernehmen Sie den Standardwert **Beliebig**.|
-   |Source port ranges|Übernehmen Sie den Standardwert **(*)**.|
+   |Quellportbereiche|Übernehmen Sie den Standardwert **(*)**.|
    |Destination|Wählen Sie **Anwendungssicherheitsgruppe** aus.|
    |Ziel-Anwendungssicherheitsgruppen|Wählen Sie **asg-web** aus|
    |Dienst|Übernehmen Sie den Standardwert **Benutzerdefiniert**|
@@ -178,14 +178,14 @@ Eine Netzwerksicherheitsgruppe (NSG) schützt den Netzwerkdatenverkehr in Ihrem 
    |Priorität|Übernehmen Sie den Standardwert **100**|
    |Name|Geben Sie **allowweball** ein|
 
-4. Klicken Sie auf **Hinzufügen**.
+4. Wählen Sie **Hinzufügen** aus.
 
 5. Führen Sie die vorherigen Schritte mit den folgenden Informationen aus:
 
    |Einstellung|Wert|
    |---|---|
    |`Source`|Übernehmen Sie den Standardwert **Beliebig**.|
-   |Source port ranges|Übernehmen Sie den Standardwert **(*)**.|
+   |Quellportbereiche|Übernehmen Sie den Standardwert **(*)**.|
    |Destination|Wählen Sie **Anwendungssicherheitsgruppe** aus.|
    |Ziel-Anwendungssicherheitsgruppe|Wählen Sie **asg-mgmt** aus|
    |Dienst|Wählen Sie **RDP** aus.|
@@ -195,7 +195,7 @@ Eine Netzwerksicherheitsgruppe (NSG) schützt den Netzwerkdatenverkehr in Ihrem 
    |Priorität|Übernehmen Sie den Standardwert **110**|
    |Name|Geben Sie  *allowrdpall* ein|
    
-6. Klicken Sie auf **Hinzufügen**.
+6. Wählen Sie **Hinzufügen** aus.
 
 ### Erstellen Sie zwei virtuelle Computer (VMs) im zuvor erstellten virtuellen Netzwerk.
 
@@ -213,9 +213,9 @@ Eine Netzwerksicherheitsgruppe (NSG) schützt den Netzwerkdatenverkehr in Ihrem 
    |**Instanzendetails**|
    |Name des virtuellen Computers|Geben Sie **vm-1** ein|
    |Region|Wählen Sie **USA, Osten** aus.|
-   |Verfügbarkeitsoptionen|Übernehmen Sie den Standardwert **Keine Infrastrukturredundanz erforderlich**|
-   |Sicherheitstyp|Übernehmen Sie den Standardwert **Standard**.|
-   |Abbildung|Wählen Sie **Windows Server 2022 Datacenter – x64 Gen2** aus.|
+   |Verfügbarkeitsoptionen|Wählen Sie im Dropdownmenü „Verfügbarkeitszone“ die Option **Keine Infrastrukturredundanz erforderlich** aus.|
+   |Sicherheitstyp|Wählen Sie im Dropdownmenü „Sicherheitstyp“ die Option **Standard** aus.|
+   |Abbildung|Wählen Sie im Dropdownmenü „Bild“ die Option **Windows Server 2022 Datacenter: Azure Edition – x64 Gen2** aus.|
    |VM-Architektur|Übernehmen Sie den Standardwert **x64**|
    |Mit Azure Spot-Rabatt ausführen|Übernehmen Sie die Standardeinstellung (deaktiviert)|
    |Größe|Übernehmen Sie die Standardeinstellung **Standard_D2s_v3 – 2 vCPUs, 8 GiB Arbeitsspeicher**|
@@ -257,15 +257,15 @@ Eine Netzwerksicherheitsgruppe (NSG) schützt den Netzwerkdatenverkehr in Ihrem 
 
 2. Wählen Sie **vm-1** aus
  
-3. Wählen Sie **Netzwerk** im Abschnitt **Anwendungssicherheitsgruppen** von **vm-1** aus
+3. Wählen Sie im Abschnitt **vm-1** die Option **Netzwerk** aus.
 
-4. Wählen Sie die Registerkarte **Anwendungssicherheitsgruppen** und dann **+ Anwendungssicherheitsgruppen hinzufügen** aus.
+4. Wählen Sie die Registerkarte **Anwendungssicherheitsgruppen** und dann **Anwendungssicherheitsgruppen konfigurieren** aus.
 
-   ![image](https://github.com/MicrosoftLearning/Secure-Azure-services-and-workloads-with-Microsoft-Defender-for-Cloud-regulatory-compliance-controls/assets/91347931/71354544-7b61-4c91-9c40-fb2c596d17e0)
+5. Wählen Sie in der Vorlage **Anwendungssicherheitsgruppen konfigurieren** aus dem Dropdownmenü **Anwendungssicherheitsgruppen** die Option **asg-mgmt** aus, und klicken Sie dann oben auf der Vorlagenseite auf das Symbol **Speichern**.
 
-5. Wählen Sie in **Anwendungssicherheitsgruppen hinzufügen** die Option **asg-web** aus. Wählen Sie in der Namensliste **Anwendungssicherheitsgruppen** dann **Hinzufügen** aus .
+![image](https://github.com/MicrosoftLearning/Secure-Azure-with-Microsoft-Defender-Cloud-Compliance-Controls/assets/91347931/dd17aeba-8e16-431b-b921-527367fea484)
 
-6. Wiederholen Sie die vorherigen Schritte für **vm-2**, und wählen Sie im Pulldownmenü **Anwendungssicherheitsgruppen** die Option **asg-mgmt** aus.
+6. Wiederholen Sie vorherige Schritte für **vm-2**, und wählen Sie dabei im Pulldownmenü **Anwendungssicherheitsgruppen** die Option **asg-web** aus.
 
 > **Ergebnisse**: Sie haben eine virtuelle Netzwerkinfrastruktur erstellt und Netzwerkdatenverkehr mit einer Netzwerksicherheitsgruppe mithilfe des Azure-Portals gefiltert.
 
