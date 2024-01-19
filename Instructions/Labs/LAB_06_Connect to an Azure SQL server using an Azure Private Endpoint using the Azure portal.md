@@ -12,7 +12,7 @@ Der private Azure-Endpunkt ist der grundlegende Baustein für Private Link in Az
 
 ---
 
-## Qualifikationsaufgabe
+## Qualifikationsaufgaben
 
 - Erstellen eines virtuellen Netzwerks und eines Bastion-Hosts.
   
@@ -43,36 +43,45 @@ Der private Azure-Endpunkt ist der grundlegende Baustein für Private Link in Az
    |Resource group|Wählen Sie **Neu erstellen**. Geben Sie **CreateSQLEndpointTutorial** ein. Klicken Sie auf **OK**.|
    |**Instanzendetails**|
    |Name des virtuellen Netzwerks|Geben Sie **myVNet1a** ein.|
-   |Region|Wählen Sie **USA, Osten** aus.|  
+   |Region|Wählen Sie **(USA) USA, Osten** aus.|  
     
-5. Wählen Sie die Registerkarte **IP-Adressen** oder die Schaltfläche **Weiter: IP-Adressen** am unteren Seitenrand aus.
+5. Wählen Sie **Weiter** aus, um zur Registerkarte **Sicherheit** zu gelangen.
+  
+6. Wählen Sie **Azure Bastion aktivieren** im Abschnitt "Azure Bastion" auf der Registerkarte "Sicherheit" aus.
 
-6. Geben Sie auf der Registerkarte **IP-Adressen** die folgenden Informationen ein:
+   >**Hinweis:** Azure Bastion verwendet Ihren Browser, um mithilfe der privaten IP-Adressen eine Verbindung mit virtuellen Computern in Ihrem virtuellen Netzwerk über Secure Shell (SSH) oder Remotedesktopprotokoll (RDP) herzustellen. Die VMs benötigen keine öffentlichen IP-Adressen, keine Clientsoftware und keine spezielle Konfiguration.
+
+7. Geben Sie die folgenden Informationen im Feld **Azure Bastion-Hostname** ein, oder wählen Sie sie aus:
 
    |Einstellung|Wert|
    |---|---|
-   |IPv4-Adressraum|Geben Sie **10.1.0.0/16** ein.|
+   |Azure Bastion-Hostname|Geben Sie **myBastionHost** ein.|
+   |Öffentlicher Azure Bastion-IP-Adressenname|Wählen Sie **Öffentliche IP-Adresse erstellen** aus.|
+   |Hinzufügen einer öffentlichen IP-Adresse|Geben Sie **my-bstn-public-ip** ein.|
+   |SKU|Übernehmen Sie den Standardwert **Standard**.|
+   
+8. Klickan Sie auf **OK**.
 
-7. Wählen Sie unter **Subnetzname** das Wort **Standard** aus.
+9. Wählen Sie **Weiter** aus, um zur Registerkarte **Sicherheit** zu gelangen.
 
-8. Geben Sie unter **Subnetz bearbeiten** die folgenden Informationen ein:
+10. Wählen Sie **Weiter** aus, um zur Registerkarte **IP-Adressen** zu gelangen.
+
+11. Wählen Sie im Feld "Adressraum" in der Spalte "Subnetze" das Wort **default** Subnetz aus.
+
+12. Geben Sie in der Vorlage **Subnetz bearbeiten** die folgenden Informationen ein, oder wählen Sie sie aus:
 
    |Einstellung|Wert|
    |---|---|
-   |Subnetzname|Geben Sie **mySubnet1a** ein.|
-   |Subnetzadressbereich|Geben Sie **10.1.0.0/24** ein.|
+   |Subnetzzweck|Übernehmen Sie den Standardwert **Default**.|
+   |Name|Geben Sie **mysubnet1a** ein.|
+   |IPv4-Adressbereich|Übernehmen Sie den Standardwert **10.0.0/16**.|
+   |Startadresse|Übernehmen Sie den Standardwert **/24 (256 Adressen)**.|
 
-9. Wählen Sie **Speichern**.
+13. Wählen Sie **Speichern**.
 
-10. Wählen Sie die Registerkarte **Sicherheit** .
+14. Wählen Sie am unteren Bildschirmrand **Überprüfen + erstellen** aus, und wenn die Validierung erfolgreich ist, wählen Sie **Erstellen** aus.
 
-11. Wählen Sie unter **Bastionhost** die Option **Aktivieren** aus. Geben Sie die folgenden Informationen ein:
-    
-    |Einstellung|Wert|
-    |---|---|
-    |Bastion-Name|Geben Sie **myBastionHost** aus.|
-    |Adressraum „AzureBastionSubnet“|Geben Sie **10.1.1.0/24** ein.|
-    |Öffentliche IP-Adresse|Wählen Sie **Neu erstellen**. Geben Sie für **Name** den Namen **My BastionIP** ein. Klickan Sie auf **OK**.| 
+    >**Hinweis:** Es kann bis zu 15 Minuten dauern, bis die Instanziierung der Bastion-Bereitstellung vollständig abgeschlossen ist.
  
 ### Erstellen Sie eine VM.
 
