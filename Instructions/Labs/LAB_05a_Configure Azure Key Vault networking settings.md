@@ -8,11 +8,11 @@ lab:
 >**Hinweis**: Für dieses Lab benötigen Sie ein [Azure-Abonnement](https://azure.microsoft.com/en-us/free/?azure-portal=true), in dem Sie über Administratorzugriff verfügen. 
 
 
-Sie können das Azure-Portal verwenden, um die Azure Key Vault-Netzwerkeinstellungen für die Verwendung mit anderen Anwendungen und Azure-Diensten zu konfigurieren. 
+Sie können das Azure-Portal verwenden, um die Azure Key Vault-Netztechnologieeinstellungen für die Verwendung mit anderen Anwendungen und Azure-Diensten zu konfigurieren. 
 
 ---
 
-## Qualifikationsaufgabe
+## Qualifikationsaufgaben
 
 - Erstellen eines Schlüsseltresors über das Azure-Portal.
 
