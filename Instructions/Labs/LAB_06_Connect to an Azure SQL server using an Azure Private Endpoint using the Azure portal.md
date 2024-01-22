@@ -26,7 +26,7 @@ Der private Azure-Endpunkt ist der grundlegende Baustein für Private Link in Az
 
 ### Erstellen Sie eine Ressourcengruppe und ein virtuelles Netzwerk.
 
->****: Der Bastionhost wird verwendet, um eine sichere Verbindung mit dem virtuellen Computer herzustellen, um den privaten Endpunkt zu testen.
+>**Hinweis:** Der Bastion-Host wird verwendet, um eine sichere Verbindung mit dem virtuellen Computer herzustellen, um den privaten Endpunkt zu testen.
 
 1. Starten Sie eine Browsersitzung, und melden Sie sich beim [Azure-Portal-Menü](https://portal.azure.com/) an.
    
