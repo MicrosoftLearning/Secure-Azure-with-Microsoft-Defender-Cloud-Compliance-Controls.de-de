@@ -99,9 +99,9 @@ Der private Azure-Endpunkt ist der grundlegende Baustein für Private Link in Az
    |**Instanzendetails**|
    |Name des virtuellen Computers|Geben Sie **myVM** ein.|
    |Region|Wählen Sie **(USA) USA, Osten** aus.|
-   |Verfügbarkeitsoptionen|Übernehmen Sie den Standardwert **Keine Infrastrukturredundanz erforderlich**.|
-   |Sicherheitstyp|Übernehmen Sie den Standardwert **Standard**.|
-   |Image|Wählen Sie **Windows Server 2022 Datacenter – x64 Gen2** aus.|
+   |Verfügbarkeitsoptionen|Wählen Sie im Dropdownmenü „Verfügbarkeitszone“ die Option **Keine Infrastrukturredundanz erforderlich** aus.|
+   |Sicherheitstyp|Wählen Sie im Dropdownmenü „Sicherheitstyp“ die Option **Standard** aus.|
+   |Abbildung|Wählen Sie **Windows Server 2022 Datacenter – x64 Gen2** aus.|
    |VM-Architektur|Wählen Sie **x64** aus.|
    |Mit Azure Spot-Rabatt ausführen|Übernehmen Sie die Standardeinstellung (deaktiviert)|
    |Größe|Übernehmen Sie den Standardwert **Standard_D2s_v3 – 2 vCPUs, 8 GiB Arbeitsspeicher.**|
@@ -189,7 +189,7 @@ Der private Azure-Endpunkt ist der grundlegende Baustein für Private Link in Az
    |Resource group|Wählen Sie **CreateSQLEndpointTutorial** aus.|
    |Standort|Wählen Sie **USA, Osten** aus.|
    |Name|Geben Sie **myPrivateSQLendpoint** ein.|
-   |Zielunterressource|Wählen Sie **mysqlserver1a** aus.|
+   |Zielunterressource|Behalten Sie die Voreinstellung **SqlServer** bei.|
    |**Netzwerk**|
    |Virtuelles Netzwerk|Wählen Sie **myVNet1a** aus.|
    |Subnet|Wählen Sie **mySubnet1a** aus.|
