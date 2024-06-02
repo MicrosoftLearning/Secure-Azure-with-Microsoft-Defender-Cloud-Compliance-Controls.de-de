@@ -74,7 +74,7 @@ Der private Azure-Endpunkt ist der grundlegende Baustein für Private Link in Az
    |---|---|
    |Subnetzzweck|Übernehmen Sie den Standardwert **Default**.|
    |Name|Geben Sie **mysubnet1a** ein.|
-   |IPv4-Adressbereich|Übernehmen Sie den Standardwert **10.0.0/16**.|
+   |IPv4-Adressbereich|Übernehmen Sie den Standardwert **10.0.0.0**.|
    |Startadresse|Übernehmen Sie den Standardwert **/24 (256 Adressen)**.|
 
 13. Wählen Sie **Speichern**.
