@@ -40,7 +40,7 @@ Sie können das Azure-Portal verwenden, um die Azure Key Vault-Netztechnologieei
    |Subscription|Wählen Sie Ihr Abonnement aus.|
    |Resource group|Geben Sie **az-rg-1** ein. Klicken Sie auf **OK**.|
    |**Instanzendetails**|
-   |Name des Schlüsseltresors|Geben Sie **AZAPLKeyVault** ein.|
+   |Name des Schlüsseltresors|Der Tresorname darf ausschließlich alphanumerische Zeichen und Bindestriche enthalten und darf nicht mit einer Zahl beginnen.|
    |Region|Wählen Sie **USA, Osten** aus.|
    |Tarif|Systemstandard **Standard**|
    |Aufbewahrungsdauer für gelöschte Tresore in Tagen|Systemstandard **90**|
