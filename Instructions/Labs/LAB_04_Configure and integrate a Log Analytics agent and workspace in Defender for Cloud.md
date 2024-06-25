@@ -1,7 +1,7 @@
 ---
 lab:
-  title: "Übung\_04\_– Erfassen von Daten aus Ihren Workloads mit dem Log\_Analytics-Agent"
-  module: Module 04 - Configure and integrate a Log Analytics agent and workspace in Defender for Cloud
+  title: 'Übung 04: Konfigurieren und Integrieren eines Log Analytics-Agents und -Arbeitsbereichs mit Defender für Cloud'
+  module: Module 05 - Configure and integrate a Log Analytics agent and workspace in Defender for Cloud
 ---
 
 
@@ -12,7 +12,7 @@ Defender für Cloud erfasst Daten von Ihren Azure-VMs, VM-Skalierungsgruppen, Ia
 
 ---
 
-## Qualifikationsaufgabe
+## Qualifikationsaufgaben
 
 - Verwenden Sie die Standardeinstellungen des Log Analytics-Agents für Ihren Agent-Typ.
 
