@@ -178,9 +178,9 @@ Eine Netzwerksicherheitsgruppe (NSG) schützt den Netzwerkdatenverkehr in Ihrem 
    |Priorität|Übernehmen Sie den Standardwert **100**|
    |Name|Geben Sie **allowweball** ein|
 
-4. Wählen Sie **Hinzufügen** aus.
+4. Wählen Sie **Hinzufügen**.
 
-5. Führen Sie die vorherigen Schritte mit den folgenden Informationen aus:
+5. Vervollständigen Sie die vorherigen Schritte mit den folgenden Informationen:
 
    |Einstellung|Wert|
    |---|---|
