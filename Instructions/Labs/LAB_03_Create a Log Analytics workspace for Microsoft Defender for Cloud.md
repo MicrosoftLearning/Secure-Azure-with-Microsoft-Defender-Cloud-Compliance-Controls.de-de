@@ -34,7 +34,7 @@ Wenn Sie Protokolle und Daten sammeln, werden diese Informationen in einem Arbei
    |---|---|
    |**Projektdetails**|
    |Subscription|Wählen Sie Ihr Abonnement aus.|
-   |Resource group|Geben Sie **azure-rg-1** ein. Klicken Sie auf **OK**.|
+   |Resource group|Geben Sie **az-rg-1** ein. Klicken Sie auf **OK**.|
    |**Instanzendetails**|
    |Name|Geben Sie **azwrkspc1a** ein.|
    |Region|Wählen Sie **USA, Osten** aus.|

@@ -259,13 +259,13 @@ Eine Netzwerksicherheitsgruppe (NSG) schützt den Netzwerkdatenverkehr in Ihrem 
  
 3. Wählen Sie im Abschnitt **vm-1** die Option **Netzwerk** aus.
 
-4. Wählen Sie die Registerkarte **Anwendungssicherheitsgruppen** und dann **Anwendungssicherheitsgruppen konfigurieren** aus.
+4. Wählen Sie die Registerkarte **Anwendungssicherheitsgruppen** und dann **+ Anwendungssicherheitsgruppen hinzufügen** aus.
 
-5. Wählen Sie in der Vorlage **Anwendungssicherheitsgruppen konfigurieren** aus dem Dropdownmenü **Anwendungssicherheitsgruppen** die Option **asg-mgmt** aus, und klicken Sie dann oben auf der Vorlagenseite auf das Symbol **Speichern**.
+5. Wählen Sie aus der Vorlage **Anwendungssicherheitsgruppen hinzufügen** die Option **asg-mgmt** aus der Vorlage **Anwendungssicherheitsgruppen** und klicken Sie dann auf das Symbol **Hinzufügen** unten auf der Vorlagenseite.
 
 ![image](https://github.com/MicrosoftLearning/Secure-Azure-with-Microsoft-Defender-Cloud-Compliance-Controls/assets/91347931/dd17aeba-8e16-431b-b921-527367fea484)
 
-6. Wiederholen Sie vorherige Schritte für **vm-2**, und wählen Sie dabei im Pulldownmenü **Anwendungssicherheitsgruppen** die Option **asg-web** aus.
+6. Wiederholen Sie die vorherigen Schritte für **vm-2** und wählen Sie **asg-web** in der Vorlage **Anwendungssicherheitsgruppen**.
 
 > **Ergebnisse**: Sie haben eine virtuelle Netzwerkinfrastruktur erstellt und Netzwerkdatenverkehr mit einer Netzwerksicherheitsgruppe mithilfe des Azure-Portals gefiltert.
 
