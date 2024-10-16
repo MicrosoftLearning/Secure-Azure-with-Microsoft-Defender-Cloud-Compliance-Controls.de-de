@@ -132,7 +132,7 @@ Eine Netzwerksicherheitsgruppe (NSG) schützt den Netzwerkdatenverkehr in Ihrem 
    |Name|Geben Sie **nsg-1** ein|
    |Region|Wählen Sie **USA, Osten** aus.|  
     
-4. Klicken Sie auf **Überprüfen** + erstellen.
+4. Klicken Sie auf **Überprüfen + erstellen**.
 
 5. Klicken Sie auf **Erstellen**.
 
