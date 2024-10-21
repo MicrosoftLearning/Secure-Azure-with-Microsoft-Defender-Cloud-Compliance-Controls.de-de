@@ -55,14 +55,16 @@ Sie können das Azure-Portal verwenden, um die Azure Key Vault-Netztechnologieei
 
 2. Navigieren Sie zum zuvor erstellten Schlüsseltresor.
 
-3. Wählen Sie **Netzwerk** und anschließend die Registerkarte **Firewalls und virtuelle Netzwerke** aus.
-
+3. Wählen Sie **Einstellungen,** dann **Netzwerke,** und dann die Registerkarte **Firewalls und virtuelle Netzwerke**.
+   
 4. Wählen Sie unter „Zugriff zulassen von“ die Option **Öffentlichen Zugriff von bestimmten virtuellen Netzwerken und IP-Adressen zulassen** aus.
 
 5. Wählen Sie im Abschnitt „Virtuelle Netzwerke“ die Option + **Virtuelles Netzwerk hinzufügen** und dann + **Vorhandene virtuelle Netzwerke hinzufügen** aus.
 
 6. Wählen Sie in der Vorlage „Netzwerke hinzufügen“ Ihr zuvor erstelltes virtuelles Netzwerk aus der Dropdownliste **Virtuelle Netzwerke** und der Dropdownliste **Subnetze** aus.
 
-7. Klicken Sie unten in der Vorlage „Netzwerke hinzufügen“ auf **Hinzufügen**.
+7. Wählen Sie unten in der Vorlage **Netzwerke hinzufügen** die Option **Hinzufügen.**
+
+8. Wählen Sie unten auf der Registerkarte **Firewalls und virtuelle Netzwerke** die Option **Anwenden.**
 
   > **Ergebnisse**: Sie haben im Azure-Portal einen Schlüsseltresor erstellt und Einstellungen für eine Key Vault-Firewall und virtuelle Netzwerke konfiguriert.

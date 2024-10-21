@@ -28,11 +28,11 @@ Sie verwenden den Bereinigungsschutz, um das Löschen Ihres Schlüsseltresors, I
    
 2. Wählen Sie Ihren Schlüsseltresor aus.
 
-3. Klicken Sie auf das Blatt **Eigenschaften**.
+3. Wählen Sie auf dem Blatt **Einstellungen** die Option **Eigenschaften** aus.
 
-4. Überprüfen Sie, ob das Optionsfeld neben „Vorläufiges Löschen“ auf **Bereinigungsschutz aktivieren** festgelegt ist.
+4. Überprüfen Sie, ob das Optionsfeld neben „vorläufiges Löschen“ auf **Löschschutz aktivieren (eine obligatorische Aufbewahrungsfrist für gelöschte Tresore und Tresorobjekte erzwingen)** festgelegt ist.
 
-5. Wenn für den Schlüsseltresor vorläufiges Löschen nicht aktiviert ist, klicken Sie auf das Optionsfeld, um das vorläufige Löschen zu aktivieren, und klicken Sie dann auf **Speichern**.
+5. Wenn die Funktion des vorläufigen Löschens im Schlüsseltresor nicht aktiviert ist, klicken Sie auf das Optionsfeld **Löschschutz aktivieren (eine obligatorische Aufbewahrungsfrist für gelöschte Tresore und Tresorobjekte erzwingen)**, um das vorläufige Löschen zu aktivieren, und klicken Sie auf **Speichern.**
 
 ![image](https://github.com/MicrosoftLearning/Secure-Azure-services-and-workloads-with-Microsoft-Cloud-Security-Benchmark/assets/91347931/06131a60-7f00-4764-a424-87ea41a78394)
 
@@ -45,7 +45,7 @@ Sie verwenden den Bereinigungsschutz, um das Löschen Ihres Schlüsseltresors, I
 
 3. Suchen Sie den Dienst **Key Vault**. Klicken Sie nicht auf einen bestimmten Schlüsseltresor.
 
-4. Klicken Sie oben im Bildschirm auf „Gelöschte Tresore verwalten“.
+4. Klicken Sie oben im Bildschirm auf **Gelöschte Tresore verwalten**.
 
 5. Auf der rechten Seite des Bildschirms wird ein Kontextbereich geöffnet.
 

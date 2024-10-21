@@ -57,9 +57,7 @@ Sie können eine Netzwerksicherheitsgruppe verwenden, um eingehenden und ausgehe
 
 7. Wählen Sie im Feld für den Adressraum unter **Subnetze** das **Standardsubnetz** aus.
 
-8. Wählen Sie im Feld für den Adressraum unter **Subnetze** das Standardsubnetz aus.
-
-9. Geben Sie unter **Subnetz bearbeiten** die folgenden Informationen ein, oder wählen Sie sie aus:
+8. Geben Sie in der Vorlage **Subnetz bearbeiten** die folgenden Informationen ein, oder wählen Sie sie aus:
 
    |Einstellung|Wert|
    |---|---|
@@ -71,10 +69,9 @@ Sie können eine Netzwerksicherheitsgruppe verwenden, um eingehenden und ausgehe
 
 ![image](https://github.com/MicrosoftLearning/Secure-Azure-services-and-workloads-with-Microsoft-Defender-for-Cloud-regulatory-compliance-controls/assets/91347931/73c40ee1-1452-4b7d-8328-004c795a7b1e)
 
+9. Wählen Sie **Speichern**.
 
-10. Wählen Sie **Speichern**.
-
-11. Wählen Sie am unteren Bildschirmrand **Überprüfen + erstellen** aus, und wenn die Validierung erfolgreich ist, wählen Sie **Erstellen** aus.
+10. Wählen Sie am unteren Bildschirmrand **Überprüfen + erstellen** aus, und wenn die Validierung erfolgreich ist, wählen Sie **Erstellen** aus.
 
 ### Mithilfe einer Anwendungssicherheitsgruppe können Sie Server mit ähnlichen Funktionen gruppieren, wie etwa Webserver.
 
@@ -135,7 +132,7 @@ Eine Netzwerksicherheitsgruppe (NSG) schützt den Netzwerkdatenverkehr in Ihrem 
    |Name|Geben Sie **nsg-1** ein|
    |Region|Wählen Sie **USA, Osten** aus.|  
     
-4. Klicken Sie auf **Überprüfen** + erstellen.
+4. Klicken Sie auf **Überprüfen + erstellen**.
 
 5. Klicken Sie auf **Erstellen**.
 
@@ -149,7 +146,7 @@ Eine Netzwerksicherheitsgruppe (NSG) schützt den Netzwerkdatenverkehr in Ihrem 
 
 3. Wählen Sie **Subnetze** im Abschnitt **Einstellungen** von **nsg-1** aus.
 
-4. Klicken Sie auf der Seite **Subnetze** auf **+ Zuordnen**:
+4. Wählen Sie auf der Seite **nsg-1 | Subnetze** die Option „+ **Verknüpfen:**“ aus.
 
  ![image](https://github.com/MicrosoftLearning/Secure-Azure-services-and-workloads-with-Microsoft-Defender-for-Cloud-regulatory-compliance-controls/assets/91347931/3b2004f6-963f-43df-9d05-3999d2e97d76)
 
@@ -161,7 +158,7 @@ Eine Netzwerksicherheitsgruppe (NSG) schützt den Netzwerkdatenverkehr in Ihrem 
 
 1. Wählen Sie im Abschnitt **Einstellungen** von **nsg-1** die Option **Eingangssicherheitsregeln** aus.
    
-2. Klicken Sie auf der Seite **Eingangssicherheitsregeln** auf **+ Hinzufügen**:
+2. Wählen Sie auf der Seite **nsg-1 | Inbound-Sicherheitsregeln** + **Hinzufügen:**
 
 3. Erstellen Sie eine Sicherheitsregel, die für die Anwendungssicherheitsgruppe **asg-web** die Ports 80 und 443 zulässt. Geben Sie auf der Seite **Eingangssicherheitsregel hinzufügen** die folgenden Informationen ein, oder wählen Sie sie aus:
 
@@ -229,7 +226,7 @@ Eine Netzwerksicherheitsgruppe (NSG) schützt den Netzwerkdatenverkehr in Ihrem 
  
 4. Wählen Sie **Weiter: Datenträger** und dann **Weiter: Netzwerk aus.
 
-5. Geben Sie auf der Registerkarte **Netzwerk** die folgenden Informationen ein, bzw. wählen Sie sie aus:
+5. Überprüfen Sie auf der Registerkarte **Netzwerke** die folgenden Informationen oder geben Sie diese ein:
 
    |Einstellung|Wert|
    |---|---|

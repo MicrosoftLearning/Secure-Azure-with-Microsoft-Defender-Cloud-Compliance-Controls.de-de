@@ -1,7 +1,7 @@
 ---
 lab:
-  title: 'Übung 03: Erstellen eines Log Analytics-Arbeitsbereichs für Microsoft Defender for Cloud'
-  module: Module 04 - Create a Log Analytics workspace for Microsoft Defender for Cloud
+  title: Übung 03 – Erstellen Sie einen Log Analytics-Arbeitsbereich
+  module: Module 04 - Create a Log Analytics workspace
 ---
 
 
@@ -24,7 +24,7 @@ Wenn Sie Protokolle und Daten sammeln, werden diese Informationen in einem Arbei
 
 1. Starten Sie eine Browsersitzung, und melden Sie sich beim [Azure-Portal-Menü](https://portal.azure.com/) an.
    
-2. Geben Sie im Menü des Azure-Portals **Log Analytics-Arbeitsbereiche** in das Suchfeld ein. Sobald Sie mit der Eingabe beginnen, wird die Liste auf der Grundlage Ihrer Eingabe gefiltert. Wählen Sie **Log Analytics-Arbeitsbereiche** aus.
+2. Geben Sie im Azure-Portalmenü im Suchfeld **Log Analytics-Arbeitsbereiche** ein. Sobald Sie mit der Eingabe beginnen, wird die Liste auf der Grundlage Ihrer Eingabe gefiltert. Wählen Sie **Log Analytics-Arbeitsbereiche** aus.
 
 4. Klicken Sie auf **Erstellen**.
 
@@ -43,4 +43,4 @@ Wenn Sie Protokolle und Daten sammeln, werden diese Informationen in einem Arbei
   
 8. Klicken Sie auf **Erstellen**.
 
-> **Ergebnisse:** Sie haben einen Log Analytics-Arbeitsbereich erstellt, um Daten von Azure-Ressourcen sowie Diagnose- oder Protokolldaten aus Azure Storage zu sammeln.
+> **Ergebnisse:** Sie haben einen Log Analytics-Arbeitsbereich erstellt, um Daten von Azure-Ressourcen zu sammeln.
