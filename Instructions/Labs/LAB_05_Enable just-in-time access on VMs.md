@@ -24,13 +24,13 @@ Mithilfe des Just-in-Time-Zugriffs (JIT) von Microsoft Defender for Cloud könne
 
 >**Hinweis**: Sie können JIT auf einer VM über die Seiten für virtuelle Azure-Computer des Azure-Portals aktivieren.
 
-1. Suchen Sie im Azure-Portal nach **Virtuelle Computer** und wählen Sie die Option aus.
+1. Geben Sie im Suchfeld oben im Portal den Begriff **Virtueller Computer** ein. Wählen Sie in den Suchergebnissen **Virtuelle Computer** aus.
+
+2. Wählen Sie **vm-1** aus.
+ 
+3. Wählen Sie **Konfiguration** aus dem Abschnitt **Einstellungen** von vm-1 aus.
    
-2. Wählen Sie den virtuellen Computer aus, den Sie mit JIT schützen möchten.
-
-3. Wählen Sie im Menü die Option **Konfiguration** aus.
-
-4. Wählen Sie unter **Just-in-Time-Zugriff** die Option **Just-in-Time aktivieren** aus.
+4. Wählen Sie unter **Just-In-Time-VM-Zugriff** die Option **Just-In-Time aktivieren** aus.
 
 5. Klicken Sie unter **Just-In-Time-Zugriff auf VMs** auf den Link **Microsoft Defender for Cloud öffnen**.
 
@@ -52,9 +52,6 @@ Mithilfe des Just-in-Time-Zugriffs (JIT) von Microsoft Defender for Cloud könne
    - Klicken Sie auf der Registerkarte **Konfiguriert** mit der rechten Maustaste auf die VM, zu der Sie einen Port hinzufügen möchten, und wählen Sie „Bearbeiten“ aus.
   
  ![image](https://github.com/MicrosoftLearning/Secure-Azure-services-and-workloads-with-Microsoft-Defender-for-Cloud-regulatory-compliance-controls/assets/91347931/66cf98b6-2ce0-43c7-a7be-b5d69bcfac1d)
-
-
-
 
    - Unter **JIT-VM-Zugriffskonfiguration** können Sie die vorhandenen Einstellungen eines bereits geschützten Ports bearbeiten oder einen neuen benutzerdefinierten Port hinzufügen.
    - Wenn Sie die Bearbeitung der Ports abgeschlossen haben, wählen Sie **Speichern** aus.   

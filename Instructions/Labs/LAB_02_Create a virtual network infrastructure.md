@@ -38,7 +38,7 @@ Sie können eine Netzwerksicherheitsgruppe verwenden, um eingehenden und ausgehe
    
 2. Geben Sie im Suchfeld oben im Portal **Virtuelle Netzwerke** ein. Wählen Sie in den Suchergebnissen **Virtuelle Netzwerke** aus.
 
-3. Wählen Sie auf der Seite „Virtuelle Netzwerke“ die Option + **Erstellen** aus.
+3. Wählen Sie auf der Seite **Virtuelle Netzwerke** die Option **+ Erstellen** aus.
 
 4. Geben Sie unter **Virtuelles Netzwerk erstellen** auf der Registerkarte **Grundlagen** die folgenden Informationen ein, oder wählen Sie sie aus:
    
@@ -46,7 +46,7 @@ Sie können eine Netzwerksicherheitsgruppe verwenden, um eingehenden und ausgehe
    |---|---|
    |**Projektdetails**|
    |Subscription|Wählen Sie Ihr Abonnement aus.|
-   |Resource group|Wählen Sie **Neu erstellen** aus, geben Sie **az-rg-1** ein, und wählen Sie **OK** aus.|
+   |Resource group|Geben Sie **az-rg-1**. Wählen Sie **OK** aus.|
    |**Instanzendetails**|
    |Name des virtuellen Netzwerks|Geben Sie **vnet-1** ein.|
    |Region|Wählen Sie **USA, Osten** aus.|  
@@ -62,10 +62,10 @@ Sie können eine Netzwerksicherheitsgruppe verwenden, um eingehenden und ausgehe
    |Einstellung|Wert|
    |---|---|
    |**Subnetzdetails**|
-   |Subnetzvorlage|Übernehmen Sie den Standardwert **Default**.|
+   |Subnetzvorlage|Behalten Sie die Standardeinstellungen als „Standard“ bei.|
    |Name|Geben Sie **Subnetz-1** ein.|
-   |Startadresse|Übernehmen Sie den Standardwert **10.0.0.0**.|
-   |Subnetzgröße|Übernehmen Sie den Standardwert **/24 (256 Adressen)**.
+   |Startadresse|Behalten Sie die Standardeinstellung als „10.0.0.0“ bei.|
+   |Subnetzgröße|Behalten Sie die Standardeinstellungen als „/24(256 addresses)“ bei.
 
 ![image](https://github.com/MicrosoftLearning/Secure-Azure-services-and-workloads-with-Microsoft-Defender-for-Cloud-regulatory-compliance-controls/assets/91347931/73c40ee1-1452-4b7d-8328-004c795a7b1e)
 
@@ -78,10 +78,10 @@ Sie können eine Netzwerksicherheitsgruppe verwenden, um eingehenden und ausgehe
 Mithilfe einer Anwendungssicherheitsgruppe (ASG) können Sie Server mit ähnlichen Funktionen gruppieren (z. B. Webserver).
 
 1. Geben Sie im Suchfeld oben im Portal **Anwendungssicherheitsgruppe** ein. Wählen Sie in den Suchergebnissen **Anwendungssicherheitsgruppen** aus.
-   
-2. Klicken Sie auf **Erstellen**.
 
-3. Geben Sie auf der Registerkarte **Grundlagen** unter **Anwendungssicherheitsgruppe erstellen** die folgenden Informationen ein, oder wählen Sie sie aus:
+2. Wählen Sie auf der Seite **Anwendungssicherheitsgruppen** die Option **+ Erstellen** aus.
+
+3. Geben Sie auf der Seite **Grundlagen** von **Erstellen einer Anwendungssicherheitsgruppe** die folgenden Informationen ein, oder wählen Sie sie aus:
    
    |Einstellung|Wert|
    |---|---|
@@ -118,8 +118,8 @@ Eine Netzwerksicherheitsgruppe (NSG) schützt den Netzwerkdatenverkehr in Ihrem 
 1. Geben Sie im Suchfeld oben im Portal **Netzwerksicherheitsgruppen** ein. Wählen Sie in den Suchergebnissen **Netzwerksicherheitsgruppen** aus.
 
 >**Hinweis**: In den Suchergebnissen für Netzwerksicherheitsgruppen wird möglicherweise „Netzwerksicherheitsgruppen (klassisch)“ angezeigt. Wählen Sie Netzwerksicherheitsgruppen aus.
-   
-2. Wählen Sie **+ Erstellen** aus.
+
+2. Wählen Sie auf der Seite **Netzwerksicherheitsgruppen** die Option **+ Erstellen** aus.
 
 3. Geben Sie auf der Registerkarte **Grundlagen** unter **Netzwerksicherheitsgruppe erstellen** die folgenden Informationen ein, oder wählen Sie sie aus:
    
@@ -158,21 +158,21 @@ Eine Netzwerksicherheitsgruppe (NSG) schützt den Netzwerkdatenverkehr in Ihrem 
 
 1. Wählen Sie im Abschnitt **Einstellungen** von **nsg-1** die Option **Eingangssicherheitsregeln** aus.
    
-2. Wählen Sie auf der Seite **nsg-1 | Inbound-Sicherheitsregeln** + **Hinzufügen:**
+2. Wählen Sie auf der Seite **nsg-1 | Inbound-Sicherheitsregeln** die Option **+ Hinzufügen** aus.
 
 3. Erstellen Sie eine Sicherheitsregel, die für die Anwendungssicherheitsgruppe **asg-web** die Ports 80 und 443 zulässt. Geben Sie auf der Seite **Eingangssicherheitsregel hinzufügen** die folgenden Informationen ein, oder wählen Sie sie aus:
 
    |Einstellung|Wert|
    |---|---|
    |`Source`|Übernehmen Sie den Standardwert **Beliebig**.|
-   |Quellportbereiche|Übernehmen Sie den Standardwert **(*)**.|
+   |Quellportbereiche|Behalten Sie die Standardeinstellung für die Portbereiche bei.|
    |Destination|Wählen Sie **Anwendungssicherheitsgruppe** aus.|
    |Ziel-Anwendungssicherheitsgruppen|Wählen Sie **asg-web** aus|
-   |Dienst|Übernehmen Sie den Standardwert **Benutzerdefiniert**|
+   |Dienst|Behalten Sie die Standardeinstellung als „Benutzerdefiniert“ bei.|
    |Zielportbereiche|Geben Sie **80,443** ein|
    |Protocol|Wählen Sie **TCP** aus.|
-   |Aktion|Übernehmen Sie den Standardwert **Zulassen**|
-   |Priorität|Übernehmen Sie den Standardwert **100**|
+   |Aktion|Behalten Sie die Standardeinstellungen als „Zulassen“ bei.|
+   |Priorität|Behalten Sie die Standardeinstellung als „100“ bei.|
    |Name|Geben Sie **allowweball** ein|
 
 4. Wählen Sie **Hinzufügen**.
@@ -182,15 +182,15 @@ Eine Netzwerksicherheitsgruppe (NSG) schützt den Netzwerkdatenverkehr in Ihrem 
    |Einstellung|Wert|
    |---|---|
    |`Source`|Übernehmen Sie den Standardwert **Beliebig**.|
-   |Quellportbereiche|Übernehmen Sie den Standardwert **(*)**.|
+   |Quellportbereiche|Behalten Sie die Standardeinstellung für die Portbereiche bei.|
    |Destination|Wählen Sie **Anwendungssicherheitsgruppe** aus.|
    |Ziel-Anwendungssicherheitsgruppe|Wählen Sie **asg-mgmt** aus|
    |Dienst|Wählen Sie **RDP** aus.|
-   |Zielportbereiche|Übernehmen Sie den Standardwert **3389**|
-   |Protokoll|Übernehmen Sie die Standardeinstellung **TCP**|
-   |Aktion|Übernehmen Sie den Standardwert **Zulassen**|
-   |Priorität|Übernehmen Sie den Standardwert **110**|
-   |Name|Geben Sie  *allowrdpall* ein|
+   |Zielportbereiche|Behalten Sie die Standardeinstellung als „3389“ bei.|
+   |Protokoll|Behalten Sie die Standardeinstellung als „TCP“ bei.|
+   |Aktion|Behalten Sie die Standardeinstellungen als „Zulassen“ bei.|
+   |Priorität|Behalten Sie die Standardeinstellung als „110“ bei.|
+   |Name|Geben Sie  **allowrdpall** ein|
    
 6. Wählen Sie **Hinzufügen** aus.
 
@@ -200,7 +200,7 @@ Eine Netzwerksicherheitsgruppe (NSG) schützt den Netzwerkdatenverkehr in Ihrem 
 
 2. Wählen Sie unter **VM** die Option **+ Erstellen** und dann **Azure-VM** aus.
    
-3. Geben Sie unter **Virtuellen Computer erstellen** auf der Registerkarte **Grundlagen** die folgenden Informationen ein, bzw. wählen Sie sie aus:
+3. Geben Sie unter **Virtuellen Computer erstellen** auf der Seite **Grundlagen** die folgenden Informationen ein, bzw. wählen Sie sie aus:
 
    |Einstellung|Wert|
    |---|---|
@@ -213,9 +213,9 @@ Eine Netzwerksicherheitsgruppe (NSG) schützt den Netzwerkdatenverkehr in Ihrem 
    |Verfügbarkeitsoptionen|Wählen Sie im Dropdownmenü „Verfügbarkeitszone“ die Option **Keine Infrastrukturredundanz erforderlich** aus.|
    |Sicherheitstyp|Wählen Sie im Dropdownmenü „Sicherheitstyp“ die Option **Standard** aus.|
    |Abbildung|Wählen Sie im Dropdownmenü „Bild“ die Option **Windows Server 2022 Datacenter: Azure Edition – x64 Gen2** aus.|
-   |VM-Architektur|Übernehmen Sie den Standardwert **x64**|
-   |Mit Azure Spot-Rabatt ausführen|Übernehmen Sie die Standardeinstellung (deaktiviert)|
-   |Größe|Übernehmen Sie die Standardeinstellung **Standard_D2s_v3 – 2 vCPUs, 8 GiB Arbeitsspeicher**|
+   |VM-Architektur|Behalten Sie die Standardeinstellung als „x64“ bei.|
+   |Mit Azure Spot-Rabatt ausführen|Behalten Sie die Standardeinstellung als deaktiviert bei.|
+   |Größe|Behalten Sie die Standardeinstellung bei: Standard_D2s_v3-2 vcpus, 8 GiB memory|
    |**Administratorkonto**|
    |Authentifizierungsart|Wählen Sie **Kennwort** aus.|
    |Username|Geben Sie **Tenantadmin1** ein|
@@ -224,19 +224,19 @@ Eine Netzwerksicherheitsgruppe (NSG) schützt den Netzwerkdatenverkehr in Ihrem 
    |**Regeln für eingehende Ports**|
    |Öffentliche Eingangsports|Wählen Sie **Keine** aus.|
  
-4. Wählen Sie **Weiter: Datenträger** und dann **Weiter: Netzwerk aus.
+4. Wählen Sie **Weiter: Datenträger** und dann **Weiter: Netzwerk** aus.
 
-5. Überprüfen Sie auf der Registerkarte **Netzwerke** die folgenden Informationen oder geben Sie diese ein:
+5. Überprüfen Sie auf der Seite **Netzwerk** die folgenden Informationen, oder geben Sie sie ein:
 
    |Einstellung|Wert|
    |---|---|
    |**Netzwerkschnittstelle**|
    |Virtuelles Netzwerk|Wählen Sie **vnet-1** aus|
    |Subnet|Wählen Sie **Standard (10.0.0.0/24)** aus|
-   |Öffentliche IP-Adresse|Übernehmen Sie den Standardwert einer neuen öffentlichen IP-Adresse|
+   |Öffentliche IP-Adresse|Behalten Sie die Standardeinstellung als neue öffentliche IP-Adresse bei.|
    |NIC-Netzwerksicherheitsgruppe|Wählen Sie **Keine** aus.|
    
-6. Wählen Sie die Registerkarte **Überprüfen + erstellen** oder unten auf der Seite die blaue Schaltfläche **Überprüfen + erstellen** aus.
+6. Wählen Sie die Registerkarte **Überprüfen + erstellen** aus, oder klicken Sie unten auf der Seite auf die Schaltfläche **Überprüfen + erstellen**.
 
 7. Klicken Sie auf **Erstellen**. Die Bereitstellung der VM kann einige Minuten dauern.
   
@@ -252,13 +252,13 @@ Eine Netzwerksicherheitsgruppe (NSG) schützt den Netzwerkdatenverkehr in Ihrem 
 
 1. Geben Sie im Suchfeld oben im Portal den Suchbegriff **Virtueller Computer** ein. Wählen Sie in den Suchergebnissen **Virtuelle Computer** aus.
 
-2. Wählen Sie **vm-1** aus
+2. Wählen Sie **vm-1** aus.
  
 3. Wählen Sie im Abschnitt **vm-1** die Option **Netzwerk** aus.
 
-4. Wählen Sie die Registerkarte **Anwendungssicherheitsgruppen** und dann **+ Anwendungssicherheitsgruppen hinzufügen** aus.
+4. Wählen Sie im Abschnitt **Netzwerk** von **vm-1 die Option **Anwendungssicherheitsgruppen** aus. Wählen Sie **+ Anwendungssicherheitsgruppen auswählen** aus
 
-5. Wählen Sie aus der Vorlage **Anwendungssicherheitsgruppen hinzufügen** die Option **asg-mgmt** aus der Vorlage **Anwendungssicherheitsgruppen** und klicken Sie dann auf das Symbol **Hinzufügen** unten auf der Vorlagenseite.
+5. Wählen Sie aus der Vorlage **Anwendungssicherheitsgruppen hinzufügen** die Option„**asg-mgmt** aus der Vorlage **Anwendungssicherheitsgruppen** aus, und klicken Sie dann unten auf der Vorlagenseite auf die Schaltfläche **Hinzufügen**.
 
 ![image](https://github.com/MicrosoftLearning/Secure-Azure-with-Microsoft-Defender-Cloud-Compliance-Controls/assets/91347931/dd17aeba-8e16-431b-b921-527367fea484)
 
@@ -266,4 +266,4 @@ Eine Netzwerksicherheitsgruppe (NSG) schützt den Netzwerkdatenverkehr in Ihrem 
 
 > **Ergebnisse**: Sie haben eine virtuelle Netzwerkinfrastruktur erstellt und Netzwerkdatenverkehr mit einer Netzwerksicherheitsgruppe mithilfe des Azure-Portals gefiltert.
 
-> **Hinweis**: Entfernen Sie die Ressourcen nicht aus diesem Lab, da sie für die folgenden Übungen erforderlich sind: „Übung 03b – Aktivieren des Just-in-Time-Zugriffs auf VMs“, „Übung 05a – Konfigurieren von Key Vault-Firewalls und virtuellen Netzwerken“ und „Übung 05b – Konfigurieren der Azure Key Vault-Wiederherstellungsverwaltung mit Schutz durch vorläufiges Löschen und Bereinigungsschutz“.
+> **Hinweis**: Entfernen Sie die Ressourcen nicht aus diesem Lab, da sie für die folgenden Übungen erforderlich sind: „Übung 05 – Aktivieren des Just-in-Time-Zugriffs auf VMs“, „Übung 06a – Konfigurieren von Key Vault-Firewalls und virtuellen Netzwerken“.
