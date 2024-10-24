@@ -49,9 +49,9 @@ Der private Azure-Endpunkt ist der grundlegende Baustein für Private Link in Az
   
 6. Wählen Sie **Azure Bastion aktivieren** im Abschnitt "Azure Bastion" auf der Registerkarte "Sicherheit" aus.
 
-   >**Hinweis**: Azure Bastion ist ein kostenpflichtiger Dienst, der eine sichere RDP/SSH-Verbindung zu Ihren virtuellen Computern über TLS bereitstellt. Beim Herstellen einer Verbindung über Azure Bastion benötigen Ihre virtuellen Computer keine öffentliche IP-Adresse. 
+   >**Hinweis**: Azure Bastion ist ein kostenpflichtiger Dienst, der eine sichere RDP/SSH-Verbindung zu Ihren virtuellen Maschinen über TLS bereitstellt. Beim Herstellen einer Verbindung über Azure Bastion benötigen Ihre virtuellen Computer keine öffentliche IP-Adresse. 
 
-7. Geben Sie die folgenden Informationen im Feld **Azure Bastion** ein, oder wählen Sie sie aus:
+7. Geben Sie die folgenden Informationen in das Feld **Azure Bastion** ein oder wählen Sie sie aus:
 
    |Einstellung|Wert|
    |---|---|
@@ -69,10 +69,10 @@ Der private Azure-Endpunkt ist der grundlegende Baustein für Private Link in Az
     |Einstellung|Wert|
     |---|---|
     |**Projektdetails**|
-    |Subnetzzweck|Behalten Sie die Standardeinstellung bei.|
+    |Subnetzzweck|Belassen Sie die Standardeinstellung auf „Standard“.|
     |Name|**subnet-2**|
-    |IPv4-Adressbereich|Behalten Sie den Standardwert als „10.0.0.0/16“ bei.|
-    |Startadresse|Behalten Sie den Standardwert als „/24(256 addresses)“ bei.|
+    |IPv4-Adressbereich|Belassen Sie die Standardeinstellung auf 10.0.0.0/16.|
+    |Startadresse|Belassen Sie die Standardeinstellung auf /24 (256 Adressen).|
 
 13. Wählen Sie unten auf der Seite **Subnetz bearbeiten** die Option **Speichern** aus.
 
@@ -90,7 +90,7 @@ Der private Azure-Endpunkt ist der grundlegende Baustein für Private Link in Az
 
 2. Wählen Sie unter **VM** die Option **+ Erstellen** und dann **Azure-VM** aus.
 
-3. Geben Sie diese Informationen auf der Seite **Grundlagen** ein oder wählen Sie sie aus, wenn Sie einen virtuellen Computer erstellen:
+3. Geben Sie diese Informationen auf der Seite **Grundlagen** ein oder wählen Sie sie aus, wenn Sie eine virtuelle Maschine erstellen:
 
    |Einstellung|Wert|
    |---|---|
@@ -104,8 +104,8 @@ Der private Azure-Endpunkt ist der grundlegende Baustein für Private Link in Az
    |Sicherheitstyp|Wählen Sie im Dropdownmenü „Sicherheitstyp“ die Option **Standard** aus.|
    |Abbildung|Wählen Sie **Windows Server 2022 Datacenter – x64 Gen2** aus.|
    |VM-Architektur|Wählen Sie **x64** aus.|
-   |Mit Azure Spot-Rabatt ausführen|Behalten Sie die Standardeinstellung als deaktiviert bei.|
-   |Größe|Behalten Sie die Standardeinstellung bei: Standard_D2s_v3-2 vcpus, 8 GiB memory.|
+   |Mit Azure Spot-Rabatt ausführen|Lassen Sie die Standardeinstellung deaktiviert.|
+   |Größe|Behalten Sie die Standardeinstellung bei: Standard_D2s_v3-2 vcpus, 8 GiB Arbeitsspeicher.|
    |**Administratorkonto**|
    |Benutzername|Geben Sie **Tenantadmin2** ein.|
    |Kennwort|Geben Sie **Superuser#170** ein.|
@@ -115,7 +115,7 @@ Der private Azure-Endpunkt ist der grundlegende Baustein für Private Link in Az
 
 5. Wählen Sie **Weiter: Datenträger** und dann **Weiter: Netzwerk** aus.
   
-6. Geben Sie auf der Seite **Netzwerk** die folgenden Informationen ein, bzw. wählen Sie sie aus:
+6. Geben Sie auf der Seite **Netzwerk** folgende Informationen ein oder wählen Sie sie aus:
 
    |Einstellung|Wert|
    |---|---|
@@ -125,8 +125,8 @@ Der private Azure-Endpunkt ist der grundlegende Baustein für Private Link in Az
    |Öffentliche IP-Adresse|Wählen Sie **Keine** aus.|
    |NIC-Netzwerksicherheitsgruppe|Wählen Sie **Basic** aus.|
    |Öffentliche Eingangsports|Wählen Sie **Keine**.|
-   |Eingangsports auswählen|Behalten Sie die Einstellung als „Leer“ bei.|
-   |Löschen Sie die NIC beim Löschen des virtuellen Computers|Behalten Sie die Standardeinstellung als „Aktivieren des beschleunigten Netzwerkbetriebs“ bei.|
+   |Eingangsports auswählen|Lassen Sie die Standardeinstellung leer.|
+   |Löschen Sie die NIC beim Löschen des virtuellen Computers|Lassen Sie die Standardeinstellung „Beschleunigten Netzwerkbetrieb aktivieren“ aktiviert.|
    |Lastenausgleich|Behalten Sie die Standardeinstellung „Keine“ bei.|
   
 6. Klicken Sie auf **Überprüfen + erstellen**.
@@ -137,7 +137,7 @@ Der private Azure-Endpunkt ist der grundlegende Baustein für Private Link in Az
 
 >**Hinweis**: In diesem Abschnitt erstellen Sie einen SQL-Server in Azure.
 
-1. Geben Sie in das Suchfeld oben auf dem Portal **SQL-Datenbank** ein. Wählen Sie in den Suchergebnissen **SQL-Datenbanken** aus.
+1. Geben Sie in das Suchfeld oben auf der Portalseite **SQL-Datenbank** ein. Wählen Sie in den Suchergebnissen **SQL-Datenbanken** aus.
 
 2. Klicken Sie auf der Seite **SQL-Datenbanken** auf **+ Erstellen**.
    
@@ -163,9 +163,9 @@ Der private Azure-Endpunkt ist der grundlegende Baustein für Private Link in Az
    |Einstellung|Wert|
    |---|---|
    |**Datenbankdetails**|
-   |Möchten Sie einen Pool für elastische SQL-Datenbanken verwenden?|Behalten Sie die Standardeinstellung als „Nein“ bei.|
-   |Workloadumgebung|Behalten Sie die Standardeinstellung als Entwicklung bei.|
-   |Compute + Speicher|Behalten Sie die Standardeinstellung als „Universell – serverlos“ bei.|
+   |Möchten Sie einen Pool für elastische SQL-Datenbanken verwenden?|Behalten Sie die Standardeinstellung bei, also „Nein“.|
+   |Workloadumgebung|Behalten Sie die Standardeinstellung „Entwicklung“ bei.|
+   |Compute + Speicher|Behalten Sie die Standardeinstellung „Universell – Serverlos“ bei.|
    |**Redundanz für Sicherungsspeicher**|
    |Redundanz für Sicherungsspeicher|Wählen Sie **Lokal redundanter Sicherungsspeicher** aus.|
    
@@ -177,8 +177,8 @@ Der private Azure-Endpunkt ist der grundlegende Baustein für Private Link in Az
    |---|---|
    |**Netzwerkkonnektivität**|
    |Konnektivitätsmethode|Wählen Sie **Privater Endpunkt** aus.|
-   |Verbindungsrichtlinie|Behalten Sie die Standardeinstellung bei: Standard – Verwendet die Umleitungsrichtlinie für alle Clientverbindungen, die innerhalb von Azure (außer Verbindungen mit privaten Endpunkten) und den Proxy für alle Clientverbindungen, die von außerhalb von Azure stammen.|
-   |Verschlüsselungsverbindungen|Behalten Sie die Standardeinstellung als „TLS.12“ bei.|
+   |Verbindungsrichtlinie|Behalten Sie die Standardeinstellung bei, d. h. „Standard – Verwendet die Umleitungsrichtlinie für alle Clientverbindungen, die innerhalb von Azure (außer Verbindungen mit privaten Endpunkten) und den Proxy für alle Clientverbindungen, die außerhalb von Azure hergestellt werden.|
+   |Verschlüsselungsverbindungen|Belassen Sie die Standardeinstellung TLS.12|
 
 7. Wählen Sie unter **Private Endpunkte** die Option **+ Privaten Endpunkt hinzufügen** aus.
 
@@ -190,13 +190,13 @@ Der private Azure-Endpunkt ist der grundlegende Baustein für Private Link in Az
    |Resource group|Wählen Sie **az-rg-1** aus.|
    |Location|Wählen Sie **USA, Osten** aus.|
    |Name|Geben Sie **az-pe-1a** ein.|
-   |Zielunterressource|Behalten Sie die Standardeinstellung als „SqlServer“ bei.|
+   |Zielunterressource|Belassen Sie die Standardeinstellung bei SqlServer.|
    |**Netzwerk**|
    |Virtuelles Netzwerk|Wählen Sie **vnet-2** aus.|
    |Subnet|Wählen Sie **subnet-2** aus.|
    |**Private DNS-Integration**|
-   |Integrieren in eine private DNS-Zone|Behalten Sie die Standardeinstellungen als „Ja“ bei.|
-   |Private DNS-Zone|Behalten Sie die Standardeinstellung als „(New) privatelink.database.windows.net“ bei|
+   |Integrieren in eine private DNS-Zone|Lassen Sie die Standardeinstellung auf „Ja“.|
+   |Private DNS-Zone|Behalten Sie die Standardeinstellung (Neu) privatelink.database.windows.net bei|
 
 9. Wählen Sie **OK** aus.
 
@@ -210,7 +210,7 @@ Der private Azure-Endpunkt ist der grundlegende Baustein für Private Link in Az
 
 1. Geben Sie im Suchfeld des Azure-Portals **az-sql-svr1a** oder den Servernamen ein, den Sie in den vorherigen Schritten eingegeben haben.
 
-2. Wählen Sie **Netzwerk** aus dem Abschnitt **Sicherheit** von **az-sql-svr1a** aus. Wählen Sie auf der Seite **Netzwerk** die Registerkarte **Öffentlicher Zugriff** aus, und wählen Sie dann **Deaktivieren** für **Öffentlicher Netzwerkzugriff** aus.
+2. Wählen Sie **Netzwerke** aus dem Abschnitt **Sicherheit** von **az-sql-svr1a.** Wählen Sie auf der Seite **Netzwerk** die Registerkarte **Öffentlicher Zugriff** aus, und wählen Sie dann **Deaktivieren** für **Öffentlicher Netzwerkzugriff** aus.
 
    ![image](https://github.com/MicrosoftLearning/Secure-Azure-services-and-workloads-with-Microsoft-Cloud-Security-Benchmark/assets/91347931/44ff5c24-70cf-49ed-b2ab-5e210c478b3a)
 
@@ -226,7 +226,7 @@ Der private Azure-Endpunkt ist der grundlegende Baustein für Private Link in Az
 
 3. Wählen Sie **vm-3** aus.
 
-4. Wählen Sie auf der Übersichtsseite für **vm-3** „Verbinden“ und dann **Bastion** aus.
+4. Auf der Übersichtsseite für **vm-3** wählen Sie Verbinden und dann **Bastion.**
 
 5. Geben Sie den Benutzernamen **Tenantadmin2** und das Kennwort **Superuser#170** ein, die Sie beim Erstellen des virtuellen Computers festgelegt haben.
 
@@ -248,9 +248,9 @@ Der private Azure-Endpunkt ist der grundlegende Baustein für Private Link in Az
    Aliases:  az-sql-svr1a.database.windows.net
    ````
     
->**Hinweis**: Als Name für den SQL-Server wird die private IP-Adresse 10.1.0.5 zurückgegeben. Diese Adresse befindet sich im Subnetz **az-sql-svr1a** des zuvor von Ihnen erstellten virtuellen Netzwerks **vnet-2**.
+>**Hinweis**: Als Name für den SQL-Server wird die private IP-Adresse 10.1.0.5 zurückgegeben. Diese Adresse befindet sich im Subnetz **az-sql-svr1a** des virtuellen Netzwerks **vnet-2**, das Sie zuvor erstellt haben.
 
-9. Installieren Sie [SQL Server Management Studio](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?preserve-view=true&view=sql-server-2017) auf **vm-3**.
+9. Installieren Sie [SQL Server Management Studio](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?preserve-view=true&view=sql-server-2017) auf **vm-3.**
  
 10. Öffnen Sie **SQL Server Management Studio**.
 
@@ -259,18 +259,18 @@ Der private Azure-Endpunkt ist der grundlegende Baustein für Private Link in Az
     |Einstellung|Wert|
     |---|---|
     |Servertyp|Wählen Sie **Datenbank-Engine** aus.|
-    |Servername|Geben Sie **az-sql-svr1a.database.windows.net** ein.|
+    |Servername|Geben Sie **az-sql-svr1a.database.windows.net.** ein.|
     |Authentifizierung|Wählen Sie **SQL Server-Authentifizierung** aus.|
     |Benutzername|Geben Sie **Tenantadmin2** ein.|
     |Kennwort|Geben Sie **Superuser#170** ein.|
     |Kennwort speichern|Wählen Sie **Ja** aus.|
-    |Konnektivitätssicherheit|
-    |Verschlüsselung|Behalten Sie die Standardeinstellung als „Obligatorisch“ bei.|
+    |Sicherheit der Konnektivität|
+    |Verschlüsselung|Belassen Sie die Standardeinstellung auf Obligatorisch.|
    
 13. Wählen Sie **Verbinden**.
 
 14. Durchsuchen Sie Datenbanken im linken Menü.
 
-15. Schließen Sie die Remotedesktopverbindung mit vm-3.
+15. Schließen Sie die Remote-Desktop-Verbindung zu vm-3.
   
 > **Ergebnisse**: Sie haben über das Azure-Portal eine Verbindung mit einem Azure SQL-Server über einen privaten Azure-Endpunkt hergestellt.
