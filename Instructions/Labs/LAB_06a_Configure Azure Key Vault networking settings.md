@@ -38,12 +38,12 @@ Sie können das Azure-Portal verwenden, um die Azure Key Vault-Netztechnologieei
    |---|---|
    |**Projektdetails**|
    |Subscription|Wählen Sie Ihr Abonnement aus.|
-   |Resource group|Geben Sie **az-rg-1** ein. Klicken Sie auf **OK**.|
+   |Resource group|Geben Sie **az-rg-1** ein.|
    |**Instanzendetails**|
-   |Name des Schlüsseltresors|Der Tresorname darf ausschließlich alphanumerische Zeichen und Bindestriche enthalten und darf nicht mit einer Zahl beginnen.|
+   |Name des Schlüsseltresors|Der Name des Tresors darf nur alphanumerische Zeichen und Bindestriche enthalten und nicht mit einer Zahl beginnen. *Beispiel: az-securevault150*|
    |Region|Wählen Sie **USA, Osten** aus.|
-   |Tarif|Systemstandard **Standard**|
-   |Aufbewahrungsdauer für gelöschte Tresore in Tagen|Systemstandard **90**|
+   |Tarif|Belassen Sie die Standardeinstellung auf Standard.|
+   |Aufbewahrungsdauer für gelöschte Tresore in Tagen|Belassen Sie die Standardeinstellung bei 90.|
 
 7. Wählen Sie die Registerkarte **Überprüfen + erstellen** aus, oder wählen Sie unten auf der Seite die blaue Schaltfläche „Überprüfen + Erstellen“ aus.
   
@@ -61,10 +61,10 @@ Sie können das Azure-Portal verwenden, um die Azure Key Vault-Netztechnologieei
 
 5. Wählen Sie im Abschnitt „Virtuelle Netzwerke“ die Option + **Virtuelles Netzwerk hinzufügen** und dann + **Vorhandene virtuelle Netzwerke hinzufügen** aus.
 
-6. Wählen Sie in der Vorlage „Netzwerke hinzufügen“ Ihr zuvor erstelltes virtuelles Netzwerk aus der Dropdownliste **Virtuelle Netzwerke** und der Dropdownliste **Subnetze** aus.
+6. Wählen Sie in der Vorlage **Netzwerke hinzufügen** Ihr zuvor erstelltes virtuelles Netzwerk aus der Dropdownliste **Virtuelle Netzwerke** und der Dropdownliste **Subnetze** aus.
 
-7. Wählen Sie unten in der Vorlage **Netzwerke hinzufügen** die Option **Hinzufügen.**
+7. Wählen Sie unten in der Vorlage **Netzwerke hinzufügen** die Option **Aktivieren** und dann **Hinzufügen**. 
 
-8. Wählen Sie unten auf der Registerkarte **Firewalls und virtuelle Netzwerke** die Option **Anwenden.**
+8. Wählen Sie unten auf der Seite **Firewalls und virtuelle Netzwerke** die Option **Anwenden.**
 
   > **Ergebnisse**: Sie haben im Azure-Portal einen Schlüsseltresor erstellt und Einstellungen für eine Key Vault-Firewall und virtuelle Netzwerke konfiguriert.
