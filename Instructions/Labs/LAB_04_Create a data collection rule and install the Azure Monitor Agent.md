@@ -1,6 +1,6 @@
 ---
 lab:
-  title: Übung 04 - Erstellen einer Datensammlungsregel und Installieren des Azure Monitor Agent
+  title: 'Übung 04 – Erstellen Sie eine Datenerfassungsregel, und installieren Sie den Azure Monitor-Agent'
   module: Module 05 - Collect guest operating system monitoring data from Azure and hybrid virtual machines using Azure Monitor Agent
 ---
 
@@ -8,13 +8,13 @@ lab:
 >**Hinweis**: Für dieses Lab benötigen Sie ein [Azure-Abonnement](https://azure.microsoft.com/en-us/free/?azure-portal=true), in dem Sie über Administratorzugriff verfügen. 
 
 
-Datensammlungsregeln (DCRs) legen die zu erfassenden Daten fest, während der Azure Monitor-Agent diese Regeln anwendet, um Protokolle und Metriken von virtuellen Maschinen in Azure, anderen Clouds oder lokal zu erfassen. Zusammen ermöglichen sie eine konsistente und zentralisierte Überwachung über verschiedene Umgebungen hinweg.
+Die Datensammlungsregeln (DCRs) legen fest, welche Daten erfasst werden sollen, während der Azure Monitor-Agent diese Regeln anwendet, um Protokolle und Metriken von virtuellen Computern in Azure, anderen Clouds oder vor Ort zu sammeln. Zusammen ermöglichen sie eine konsistente und zentralisierte Überwachung in verschiedenen Umgebungen.
 
 ---
 
 ## Qualifikationsaufgabe
 
-- Erstellen und Definieren einer Datensammlungsregel.
+- Erstellen und definieren Sie eine Datensammlungsregel.
 
 - Wählen Sie Zielressourcen für die Datensammlung aus.
 
@@ -22,7 +22,7 @@ Datensammlungsregeln (DCRs) legen die zu erfassenden Daten fest, während der Az
   
 - Konfigurieren Sie Datenquellen und -ziele.
 
-- Wählen Sie Datenquellentypen und zu erfassende Daten aus.
+- Wählen Sie Datenquellentypen und -daten für die Sammlung aus.
 
 - Wählen Sie ein Ziel für die Datenübermittlung aus.
 

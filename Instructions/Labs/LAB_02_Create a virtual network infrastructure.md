@@ -63,13 +63,15 @@ Sie können eine Netzwerksicherheitsgruppe verwenden, um eingehenden und ausgehe
    |Subnetzzweck|Belassen Sie die Standardeinstellung auf „Standard“.|
    |Name|Geben Sie **subnet-1** ein.|
    |Startadresse|Belassen Sie die Standardeinstellung auf 10.0.0.0/16.|
-   |Subnetzgröße|Belassen Sie die Standardeinstellungen bei /24 (256 Adressen.).
+   |Subnetzgröße|Behalten Sie die Standardeinstellungen als „/24(256 addresses)“ bei.
 
-![image](https://github.com/MicrosoftLearning/Secure-Azure-services-and-workloads-with-Microsoft-Defender-for-Cloud-regulatory-compliance-controls/assets/91347931/73c40ee1-1452-4b7d-8328-004c795a7b1e)
+   ![image](https://github.com/user-attachments/assets/4c5834f8-459f-4063-bd82-3e65237c6b1d)
 
-9. Wählen Sie **Speichern**.
+10. Wählen Sie **Speichern**.
 
-10. Wählen Sie am unteren Bildschirmrand **Überprüfen + erstellen** aus, und wenn die Validierung erfolgreich ist, wählen Sie **Erstellen** aus.
+11. Wählen Sie am unteren Bildschirmrand **Überprüfen + erstellen** aus, und wenn die Validierung erfolgreich ist, wählen Sie **Erstellen** aus.
+
+    ![image](https://github.com/user-attachments/assets/4fd02061-2349-42c4-8582-c7178f9b7eb6)
 
 ### Mithilfe einer Anwendungssicherheitsgruppe können Sie Server mit ähnlichen Funktionen gruppieren, wie etwa Webserver.
 
@@ -103,7 +105,7 @@ Mithilfe einer Anwendungssicherheitsgruppe (ASG) können Sie Server mit ähnlich
    |Resource group|Wählen Sie **az-rg-1** aus.|
    |**Instanzendetails**|
    |Name|Geben Sie **asg-mgmt** ein.|
-   |Region|Wählen Sie **(USA) USA, Osten** aus.|
+   |Region|Wählen Sie **USA, Osten** aus.|
 
 7. Klicken Sie auf **Überprüfen + erstellen**.
 
