@@ -1,4 +1,4 @@
-# Schützen von Azure-Diensten und -Workloads mithilfe von Microsoft Defender for Cloud-Kontrollmechanismen für die Einhaltung der Compliance
+# Sichere Azure-Dienste und -Workloads mit Compliance-Kontrollen von Microsoft Defender for Cloud
 
 **Sind Sie ein MCT?** – Lesen Sie unser [GitHub-Benutzerhandbuch für MCTs](https://microsoftlearning.github.io/MCT-User-Guide/).
 
@@ -6,9 +6,9 @@
 
 - Zur Unterstützung dieses Kurses müssen wir den Kursinhalt regelmäßig aktualisieren, um ihn auf den neuesten Stand der im Kurs verwendeten Microsoft-Dienste zu bringen. Wir veröffentlichen die Labanweisungen und Labdateien auf GitHub, um offene Beiträge zwischen den Kursautor*innen und MCTs (Microsoft Certified Trainer) zu ermöglichen und die Inhalte an aktuelle Produktänderungen anzupassen.
 
-- Wir hoffen, dass sich daraus ein beispielloses Gefühl der Zusammenarbeit in den Labs ergibt. Wenn sich ein Microsoft-Dienst wie Azure oder Microsoft 365 ändert und Ihnen dies bei einem Live-Vortrag auffällt, können Sie direkt im Labcode eine Verbesserung vornehmen. Helfen Sie Ihren MCT-Kollegen.
+- Wir hoffen, dass sich daraus ein beispielloses Gefühl der Zusammenarbeit in den Labs ergibt. Wenn sich ein Microsoft-Dienst wie Azure oder Microsoft 365 ändert und Ihnen dies bei einem Live-Vortrag auffällt, können Sie direkt im Labcode eine Verbesserung vornehmen. Helfen Sie Ihren MCTs.
 
-## Wie soll ich dieses Repository verwenden?
+## Wie sollte ich dieses Repository verwenden?
 
 - Die Kursleitermaterialien sind auch weiterhin Ihre Hauptquelle für die Kursinhalte.
 

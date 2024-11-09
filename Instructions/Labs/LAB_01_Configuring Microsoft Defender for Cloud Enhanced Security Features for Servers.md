@@ -28,7 +28,7 @@ Das Hauptziel dieser Übung besteht darin, praktische Erfahrung in der Konfigura
 
 3. Gehen Sie auf **Microsoft Defender for Cloud**, **Verwaltungsblatt**, zu den **Umgebungseinstellungen**. Erweitern Sie die Ordner für die Umgebungseinstellungen, bis der Abschnitt **Abonnement** angezeigt wird, und klicken Sie dann auf das **Abonnement**, um Details anzuzeigen.
 
-   ![image](https://github.com/user-attachments/assets/32d2168e-458f-4872-9bf8-e8f050f24751)
+   ![image](https://github.com/user-attachments/assets/3b25dd82-e09e-4f8a-b85e-c9bc6c4bd488)
    
 3. Erweitern Sie im Blatt **Einstellungen** unter **Defender-Pläne** **Cloud Workload Protection (CWP)“**.
 
@@ -37,7 +37,7 @@ Das Hauptziel dieser Übung besteht darin, praktische Erfahrung in der Konfigura
 5. Um die Details von **Microsoft Defender for Servers Plan 2** zu überprüfen, wählen Sie **Plan ändern >**.
 
    Hinweis: Wenn Sie den Cloud Workload Protection (CWP)-Serverplan von „Aus“ auf „Ein“ setzen, wird der „Microsoft Defender for Servers Plan 2“ aktiviert.
-
-   ![image](https://github.com/user-attachments/assets/869a38e4-464e-4be0-b02e-ce1b96f02978)
+ 
+   ![image](https://github.com/user-attachments/assets/de434a75-345a-4023-83f1-fa53fcb5f288)
    
 > **Ergebnisse**: Sie müssen Defender for Servers Plan 2 in Ihrem Abonnement aktivieren.

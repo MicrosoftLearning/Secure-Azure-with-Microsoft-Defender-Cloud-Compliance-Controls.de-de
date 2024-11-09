@@ -38,7 +38,6 @@ Der private Azure-Endpunkt ist der grundlegende Baustein für Private Link in Az
    
    |Einstellung|Wert|
    |---|---|
-   |**Projektdetails**|
    |Subscription|Wählen Sie Ihr Abonnement aus.|
    |Resource group|Wählen Sie **az-rg-1** aus.|
    |**Instanzendetails**|
@@ -49,38 +48,39 @@ Der private Azure-Endpunkt ist der grundlegende Baustein für Private Link in Az
   
 6. Wählen Sie **Azure Bastion aktivieren** im Abschnitt "Azure Bastion" auf der Registerkarte "Sicherheit" aus.
 
-   >**Hinweis**: Azure Bastion ist ein kostenpflichtiger Dienst, der eine sichere RDP/SSH-Verbindung zu Ihren virtuellen Maschinen über TLS bereitstellt. Beim Herstellen einer Verbindung über Azure Bastion benötigen Ihre virtuellen Computer keine öffentliche IP-Adresse. 
+>**Hinweis**: Azure Bastion ist ein kostenpflichtiger Dienst, der eine sichere RDP/SSH-Verbindung zu Ihren virtuellen Maschinen über TLS bereitstellt. Beim Herstellen einer Verbindung über Azure Bastion benötigen Ihre virtuellen Computer keine öffentliche IP-Adresse. 
 
 7. Geben Sie die folgenden Informationen in das Feld **Azure Bastion** ein oder wählen Sie sie aus:
 
    |Einstellung|Wert|
    |---|---|
-   |**Projektdetails**|
    |Azure Bastion-Host |Geben Sie **az-bastionhost-1a** ein.|
    |Öffentlicher Azure Bastion-IP-Adressenname|Wählen Sie **Öffentliche IP-Adresse erstellen** aus.|
    |Öffentliche IP-Adresse hinzufügen|Wählen Sie **OK** aus.|
 
-9. Wählen Sie **Weiter** aus, um zur Registerkarte **IP-Adressen** zu gelangen.
+8. Wählen Sie **Weiter** aus, um zur Registerkarte **IP-Adressen** zu gelangen.
 
-10. Klicken Sie im vorhandenen konfigurierten **IPv4-Adressraum** in der Spalte **Subnetze** auf den Eintrag **Standard**.
+9. Klicken Sie im vorhandenen konfigurierten **IPv4-Adressraum** in der Spalte **Subnetze** auf den Eintrag **Standard**.
 
-11. Geben Sie in der Vorlage **Subnetz bearbeiten** die folgenden Informationen ein, oder wählen Sie sie aus:
+10. Geben Sie in der Vorlage **Subnetz bearbeiten** die folgenden Informationen ein, oder wählen Sie sie aus:
 
     |Einstellung|Wert|
     |---|---|
-    |**Projektdetails**|
     |Subnetzzweck|Belassen Sie die Standardeinstellung auf „Standard“.|
     |Name|**subnet-2**|
+    |Einschließen eines IPv4-Adressraums|Behalten Sie die Standardeinstellung mit dem Häkchen bei.|
     |IPv4-Adressbereich|Belassen Sie die Standardeinstellung auf 10.0.0.0/16.|
-    |Startadresse|Belassen Sie die Standardeinstellung auf /24 (256 Adressen).|
+    |Startadresse|10.0.0.0.|
+    |Größe|Belassen Sie die Standardeinstellung auf /24 (256 Adressen).|
+    |Subnetzadressbereich|10.0.0.0-10.0.0.255|
 
-13. Wählen Sie unten auf der Seite **Subnetz bearbeiten** die Option **Speichern** aus.
+11. Wählen Sie unten auf der Seite **Subnetz bearbeiten** die Option **Speichern** aus.
 
-14. Wählen Sie unten auf der Seite **IP-Adressen** die Option **Überprüfen + erstellen** aus.
+12. Wählen Sie unten auf der Seite **IP-Adressen** die Option **Überprüfen + erstellen** aus.
 
-    >**Hinweis:** Es kann bis zu 15 Minuten dauern, bis die Instanziierung der Bastion-Bereitstellung vollständig abgeschlossen ist.
+13. Wählen Sie unten auf der Seite **Überprüfen + erstellen** die Option **Erstellen** aus.
 
-15. Wählen Sie unten auf der Seite **Überprüfen + erstellen** die Option **Erstellen** aus.
+>**Hinweis:** Es kann bis zu 15 Minuten dauern, bis die Instanziierung der Bastion-Bereitstellung vollständig abgeschlossen ist.
  
 ### Erstellen Sie eine VM.
 
@@ -94,7 +94,6 @@ Der private Azure-Endpunkt ist der grundlegende Baustein für Private Link in Az
 
    |Einstellung|Wert|
    |---|---|
-   |**Projektdetails**|
    |Abonnement|Wählen Sie Ihr Abonnementaus.|
    |Resource group|Wählen Sie **az-rg-1** aus.|
    |**Instanzendetails**|
@@ -111,11 +110,12 @@ Der private Azure-Endpunkt ist der grundlegende Baustein für Private Link in Az
    |Kennwort|Geben Sie **Superuser#170** ein.|
    |Kennwort bestätigen|Geben Sie erneut **Superuser#170** ein.|
    |**Regeln für eingehende Ports**|
-   |Eingangsports auswählen|Wählen Sie **Keine**.|
+   |Öffentliche Eingangsports|Wählen Sie **Keine**.|
+   |Eingangsports auswählen|Die Standardeinstellung ist abgeblendet.|
 
-5. Wählen Sie **Weiter: Datenträger** und dann **Weiter: Netzwerk** aus.
+4. Wählen Sie **Weiter: Datenträger** und dann **Weiter: Netzwerk** aus.
   
-6. Geben Sie auf der Seite **Netzwerk** folgende Informationen ein oder wählen Sie sie aus:
+5. Geben Sie auf der Seite **Netzwerk** folgende Informationen ein oder wählen Sie sie aus:
 
    |Einstellung|Wert|
    |---|---|
@@ -125,7 +125,7 @@ Der private Azure-Endpunkt ist der grundlegende Baustein für Private Link in Az
    |Öffentliche IP-Adresse|Wählen Sie **Keine** aus.|
    |NIC-Netzwerksicherheitsgruppe|Wählen Sie **Basic** aus.|
    |Öffentliche Eingangsports|Wählen Sie **Keine**.|
-   |Eingangsports auswählen|Lassen Sie die Standardeinstellung leer.|
+   |Eingangsports auswählen|Die Standardeinstellung ist abgeblendet.|
    |Löschen Sie die NIC beim Löschen des virtuellen Computers|Lassen Sie die Standardeinstellung „Beschleunigten Netzwerkbetrieb aktivieren“ aktiviert.|
    |Lastenausgleich|Behalten Sie die Standardeinstellung „Keine“ bei.|
   
@@ -145,21 +145,22 @@ Der private Azure-Endpunkt ist der grundlegende Baustein für Private Link in Az
 
    |Einstellung|Wert|
    |---|---|
-   |**Projektdetails**|
    |Subscription|Wählen Sie Ihr Abonnement aus.|
    |Resource group|Wählen Sie **az-rg-1** aus.|
    |**Datenbankdetails**|
    |Datenbankname|Geben Sie **az-sql-db1a** ein.|
-   |Servername|Geben Sie **az-sql-svr1a** ein. Wenn dieser Name vergeben ist, erstellen Sie einen eindeutigen Namen.|
-   |Standort|Wählen Sie **(USA) USA, Osten** aus.|
+   |Server|Wählen Sie **Neu erstellen**.|
+   |**Serverdetails**|
+   |Servername|Geben Sie **az-sql-svr1a** ein.|
+   |Location|Behalten Sie die Standardeinstellung „USA, Osten“ bei.|
    |**Authentifizierung**|
-   |Authentifizierungsmethode|Wählen Sie **SQL-Authentifizierung verwenden** aus.|
+   |Authentifizierungsmethode|Wählen Sie **SQL-Authentifizierung verwenden** aus.|  
    |Serveradministratoranmeldung|Geben Sie **Tenantadmin2** ein.|
    |Kennwort|Geben Sie **Superuser#170** ein.|
    |Kennwort bestätigen|Geben Sie **Superuser#170** ein.|
 
 4. Klickan Sie auf **OK**.
-   
+    
    |Einstellung|Wert|
    |---|---|
    |**Datenbankdetails**|
@@ -180,16 +181,20 @@ Der private Azure-Endpunkt ist der grundlegende Baustein für Private Link in Az
    |Verbindungsrichtlinie|Behalten Sie die Standardeinstellung bei, d. h. „Standard – Verwendet die Umleitungsrichtlinie für alle Clientverbindungen, die innerhalb von Azure (außer Verbindungen mit privaten Endpunkten) und den Proxy für alle Clientverbindungen, die außerhalb von Azure hergestellt werden.|
    |Verschlüsselungsverbindungen|Belassen Sie die Standardeinstellung TLS.12|
 
-7. Wählen Sie unter **Private Endpunkte** die Option **+ Privaten Endpunkt hinzufügen** aus.
+7. Wählen Sie im Abschnitt **Private Endpunkte** die Option **Privaten Endpunkt hinzufügen** aus.
 
-8. Geben Sie unter **Privaten Endpunkt erstellen** diese Informationen ein, oder wählen Sie sie aus:
+8. Klicken Sie auf **Überprüfen + erstellen**.
+
+9. Klicken Sie auf **Erstellen**.
+
+10. Geben Sie unter **Privaten Endpunkt erstellen** diese Informationen ein, oder wählen Sie sie aus:
 
    |Einstellung|Wert|
    |---|---|
    |Subscription|Wählen Sie Ihr Abonnement aus.|
    |Resource group|Wählen Sie **az-rg-1** aus.|
    |Location|Wählen Sie **USA, Osten** aus.|
-   |Name|Geben Sie **az-pe-1a** ein.|
+   |Name|Geben Sie **az-pe1a** ein.|
    |Zielunterressource|Belassen Sie die Standardeinstellung bei SqlServer.|
    |**Netzwerk**|
    |Virtuelles Netzwerk|Wählen Sie **vnet-2** aus.|
@@ -198,63 +203,70 @@ Der private Azure-Endpunkt ist der grundlegende Baustein für Private Link in Az
    |Integrieren in eine private DNS-Zone|Lassen Sie die Standardeinstellung auf „Ja“.|
    |Private DNS-Zone|Behalten Sie die Standardeinstellung (Neu) privatelink.database.windows.net bei|
 
-9. Wählen Sie **OK** aus.
+11. Wählen Sie **OK** aus.
 
-10. Klicken Sie auf **Überprüfen + erstellen**.
+12. Klicken Sie auf **Überprüfen + erstellen**.
 
-11. Klicken Sie auf **Erstellen**.
+13. Klicken Sie auf **Erstellen**.
 
-### Deaktivieren des öffentlichen Zugriffs auf logische Azure SQL-Server
+>**Hinweis**: Die Bereitstellung von Azure SQL Server und privaten Endpunkten kann bis zu 10 Minuten dauern, bis die vollständige Instanziierung abgeschlossen ist.
 
->**Hinweis**: Gehen Sie für dieses Szenario davon aus, dass Sie den gesamten öffentlichen Zugriff auf Ihren Azure SQL-Server deaktivieren und nur Verbindungen aus Ihrem virtuellen Netzwerk zulassen möchten. Die Einstellung **Öffentlicher Zugriff** ist möglicherweise standardmäßig auf **Deaktivieren** gesetzt.
+### Erlauben Sie bestimmten öffentlichen Internet-IP-Adressen den Zugriff auf Ihren logischen Azure SQL-Server.
+
+>**Hinweis**: Gehen Sie für diese Aufgabe davon aus, dass Sie den gesamten öffentlichen Zugriff auf Ihren Azure SQL-Server deaktivieren und nur Verbindungen aus Ihrem virtuellen Netzwerk zulassen möchten. Die Einstellung „Öffentlicher Zugriff“ ist möglicherweise standardmäßig auf **Deaktiviert** gesetzt.
 
 1. Geben Sie im Suchfeld des Azure-Portals **az-sql-svr1a** oder den Servernamen ein, den Sie in den vorherigen Schritten eingegeben haben.
+   
+2. Wählen Sie **Netzwerk** aus dem Abschnitt **Sicherheit** von **az-sql-svr1a** aus.
+  
+3. Wechseln Sie auf der Seite **Netzwerk** zur Registerkarte **Öffentlicher Zugriff**.
+  
+4. Prüfen Sie, ob **Öffentlicher Netzwerkzugriff** deaktiviert ist. Falls dies deaktiviert ist, wählen Sie unter „Öffentlicher Netzwerkzugriff“ die Option **Ausgewählte Netzwerke** aus.
 
-2. Wählen Sie **Netzwerke** aus dem Abschnitt **Sicherheit** von **az-sql-svr1a.** Wählen Sie auf der Seite **Netzwerk** die Registerkarte **Öffentlicher Zugriff** aus, und wählen Sie dann **Deaktivieren** für **Öffentlicher Netzwerkzugriff** aus.
+>**Hinweis**: Von den IP-Adressen, die wie im nachstehenden Abschnitt mit Firewallregeln konfiguriert sind, ausgehende Verbindungen erhalten Zugriff auf diese Datenbank. Standardmäßig sind öffentliche IP-Adressen unzulässig.
 
-   ![image](https://github.com/MicrosoftLearning/Secure-Azure-services-and-workloads-with-Microsoft-Cloud-Security-Benchmark/assets/91347931/44ff5c24-70cf-49ed-b2ab-5e210c478b3a)
+5. Wechseln Sie ggf. zum Abschnitt **Firewallregeln** auf der Seite **Netzwerk** und wählen Sie **+ Client-IPv4-Adresse hinzufügen** aus, wenn Ihre Client-IP-Adresse nicht bereits in den Feldern **Regelname**, **Start-IPv4-Adresse** und **End-IPv4-Adresse** eingefügt ist.
+    
+     ![image](https://github.com/user-attachments/assets/dfdeffca-d33f-44e1-81db-9f68a51f89df)
 
-3. Wählen Sie **Speichern**.
+6. Wählen Sie **Speichern** aus, wenn erforderlich.
 
 ### Testen der Verbindung mit dem privaten Endpunkt
 
 >**Hinweis**: In diesem Abschnitt verwenden Sie den virtuellen Computer, den Sie in den vorherigen Schritten erstellt haben, um über den privaten Endpunkt eine Verbindung mit dem SQL-Server herzustellen.
 
-1. Wählen Sie **Ressourcengruppen** im linken Navigationsbereich aus.
+1. Geben Sie im Suchfeld des Azure-Portals **vm-3** ein und treffen Sie in der Dropdownliste „Ressourcen“ Ihre Auswahl.
 
-2. Wählen Sie **az-rg-1** aus.
+2. Wählen Sie auf der Seite **Übersicht** von vm-1 die Option **Verbinden** und dann **Bastion** aus.
 
-3. Wählen Sie **vm-3** aus.
-
-4. Auf der Übersichtsseite für **vm-3** wählen Sie Verbinden und dann **Bastion.**
-
-5. Geben Sie den Benutzernamen **Tenantadmin2** und das Kennwort **Superuser#170** ein, die Sie beim Erstellen des virtuellen Computers festgelegt haben.
+3. Geben Sie den Benutzernamen **Tenantadmin2** und das Kennwort **Superuser#170** ein, die Sie beim Erstellen des virtuellen Computers festgelegt haben.
 
    **Wichtig:** Wechseln Sie zu den Edge-Einstellungen/Popups und Umleitungen, und schalten Sie die Option „Blockiert“ auf **Aus** um, bevor Sie „Verbinden“ auswählen.
 
-7. Wählen Sie die Schaltfläche **Verbinden** aus.
+4. Wählen Sie die Schaltfläche **Verbinden** aus.
   
-8. Öffnen Sie Windows PowerShell auf dem Server, nachdem Sie eine Verbindung hergestellt haben.
+5. Öffnen Sie Windows PowerShell auf dem Server, nachdem Sie eine Verbindung hergestellt haben.
 
-9. Geben Sie `nslookup sqlserver-name.database.windows.net.` ein, und ersetzen Sie **sqlserver-name** durch den Namen des SQL-Servers, den Sie in den vorherigen Schritten erstellt haben. Sie erhalten eine Meldung ähnlich der folgenden:
+6. Ersetzen Sie **sqlserver-name** durch den Namen des SQL-Servers, den Sie in den vorherigen Schritten erstellt haben. Geben Sie z. B. **nslookup az-sql-srv1a.database.windows.net** ein. Sie erhalten eine Meldung ähnlich der unten gezeigten:
 
-   ````  
+   ````
+   
    Server:  UnKnown
    Address:  168.63.129.16
    
    Non-authoritative answer:
-   Name:    az-sql-svr1a.privatelink.database.windows.net
+   Name:    az-sql-srv1a.privatelink.database.windows.net
    Address:  10.1.0.5
-   Aliases:  az-sql-svr1a.database.windows.net
+   Aliases:  az-sql-srv1a.database.windows.net
    ````
-    
->**Hinweis**: Als Name für den SQL-Server wird die private IP-Adresse 10.1.0.5 zurückgegeben. Diese Adresse befindet sich im Subnetz **az-sql-svr1a** des virtuellen Netzwerks **vnet-2**, das Sie zuvor erstellt haben.
+   
+>**Hinweis**: Als Name für den SQL-Server wird die private IP-Adresse 10.1.0.5 zurückgegeben. Diese Adresse befindet sich im Subnetz **az-sql-svr1a** > des zuvor von Ihnen erstellten virtuellen Netzwerks **vnet-2**.
 
-9. Installieren Sie [SQL Server Management Studio](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?preserve-view=true&view=sql-server-2017) auf **vm-3.**
+7. Installieren Sie [SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?preserve-view=true&amp;view=sql-server-2017) auf **vm-3.**
  
-10. Öffnen Sie **SQL Server Management Studio**.
+8. Öffnen Sie **SQL Server Management Studio**.
 
-11. Geben Sie unter **Mit Server verbinden** diese Informationen ein, oder wählen Sie sie aus:
+9. Geben Sie unter **Mit Server verbinden** diese Informationen ein, oder wählen Sie sie aus:
 
     |Einstellung|Wert|
     |---|---|
@@ -267,10 +279,10 @@ Der private Azure-Endpunkt ist der grundlegende Baustein für Private Link in Az
     |Sicherheit der Konnektivität|
     |Verschlüsselung|Belassen Sie die Standardeinstellung auf Obligatorisch.|
    
-13. Wählen Sie **Verbinden**.
+10. Wählen Sie **Verbinden**.
 
-14. Durchsuchen Sie Datenbanken im linken Menü.
+11. Durchsuchen Sie Datenbanken im linken Menü.
 
-15. Schließen Sie die Remote-Desktop-Verbindung zu vm-3.
+12. Schließen Sie die Remote-Desktop-Verbindung zu vm-3.
   
 > **Ergebnisse**: Sie haben über das Azure-Portal eine Verbindung mit einem Azure SQL-Server über einen privaten Azure-Endpunkt hergestellt.
