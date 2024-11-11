@@ -24,11 +24,11 @@ Wenn Sie Protokolle und Daten sammeln, werden diese Informationen in einem Arbei
 
 1. Starten Sie eine Browsersitzung, und melden Sie sich beim [Azure-Portal-Menü](https://portal.azure.com/) an.
    
-2. Geben Sie im Azure-Portalmenü im Suchfeld **Log Analytics-Arbeitsbereiche** ein. Sobald Sie mit der Eingabe beginnen, wird die Liste auf der Grundlage Ihrer Eingabe gefiltert. Wählen Sie **Log Analytics-Arbeitsbereiche** aus.
+2. Geben Sie in das Suchfeld oben im Portal **Protokollanalyse-Arbeitsbereiche** ein. Wählen Sie in den Suchergebnissen **Protokollanalyse-Arbeitsbereiche** aus.
 
-4. Wählen Sie auf der Seite **Protokollanalyse-Arbeitsbereiche** die Option **+ Erstellen** aus.
+3. Wählen Sie auf der Seite **Protokollanalyse-Arbeitsbereiche** die Option **+ Erstellen** aus.
 
-5. Geben Sie auf der Seite **Grundlagen** unter **Log Analytics-Arbeitsbereich erstellen** diese Informationen ein, oder wählen Sie sie aus:
+4. Geben Sie auf der Seite **Grundlagen** unter **Log Analytics-Arbeitsbereich erstellen** diese Informationen ein, oder wählen Sie sie aus:
    
    |Einstellung|Wert|
    |---|---|
@@ -39,8 +39,8 @@ Wenn Sie Protokolle und Daten sammeln, werden diese Informationen in einem Arbei
    |Name|Geben Sie **azwrkspc1a** ein.|
    |Region|Wählen Sie **USA, Osten** aus.|
 
-6. Wählen Sie unten auf der Seite die Registerkarte **Überprüfen + erstellen** aus.
+5. Wählen Sie unten auf der Seite die Registerkarte **Überprüfen + erstellen** aus.
   
-8. Klicken Sie auf **Erstellen**.
+6. Klicken Sie auf **Erstellen**.
 
 > **Ergebnisse:** Sie haben einen Log Analytics-Arbeitsbereich erstellt, um Daten von Azure-Ressourcen zu sammeln.

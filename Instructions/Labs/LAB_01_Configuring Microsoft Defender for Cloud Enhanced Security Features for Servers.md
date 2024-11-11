@@ -22,7 +22,7 @@ Das Hauptziel dieser Übung besteht darin, praktische Erfahrung in der Konfigura
 
 ### Konfigurieren von Microsoft Defender for Cloud Enhanced Security Features für Server
 
-1. Melden Sie sich im [Menü des Azure-Portals](https://portal.azure.com/) an.
+1.  Starten Sie eine Browsersitzung, und melden Sie sich beim [Azure-Portal-Menü](https://portal.azure.com/) an.         
 
 2. Geben Sie im Azure-Portal in das Textfeld „Ressourcen, Dienste und Dokumente suchen“ oben auf der Azure-Portalseite **Microsoft Defender for Cloud** ein und drücken Sie dann die **Eingabetaste**.
 
@@ -30,11 +30,11 @@ Das Hauptziel dieser Übung besteht darin, praktische Erfahrung in der Konfigura
 
    ![image](https://github.com/user-attachments/assets/3b25dd82-e09e-4f8a-b85e-c9bc6c4bd488)
    
-3. Erweitern Sie im Blatt **Einstellungen** unter **Defender-Pläne** **Cloud Workload Protection (CWP)“**.
+4. Erweitern Sie im Blatt **Einstellungen** unter **Defender-Pläne** **Cloud Workload Protection (CWP)“**.
 
-4. Wählen Sie in der Liste **Cloud Workload Protection (CWP)-Plan** die Option **Server** aus. Ändern Sie auf der rechten Seite den **Status** von **Aus** in **Ein**, und klicken Sie dann auf **Speichern**.
+5. Wählen Sie in der Liste **Cloud Workload Protection (CWP)-Plan** die Option **Server** aus. Ändern Sie auf der rechten Seite den **Status** von **Aus** in **Ein**, und klicken Sie dann auf **Speichern**.
 
-5. Um die Details von **Microsoft Defender for Servers Plan 2** zu überprüfen, wählen Sie **Plan ändern >**.
+6. Um die Details von **Microsoft Defender for Servers Plan 2** zu überprüfen, wählen Sie **Plan ändern >**.
 
    Hinweis: Wenn Sie den Cloud Workload Protection (CWP)-Serverplan von „Aus“ auf „Ein“ setzen, wird der „Microsoft Defender for Servers Plan 2“ aktiviert.
  
