@@ -63,21 +63,21 @@ Sie können eine Netzwerksicherheitsgruppe verwenden, um eingehenden und ausgehe
    |Subnetzzweck|Belassen Sie die Standardeinstellung auf „Standard“.|
    |Name|Geben Sie **subnet-1** ein.|
    |Startadresse|Belassen Sie die Standardeinstellung auf 10.0.0.0/16.|
-   |Subnetzgröße|Behalten Sie die Standardeinstellungen als „/24(256 addresses)“ bei.
+   |Größe|Behalten Sie die Standardeinstellungen als „/24 (256 addresses)“ bei.|
 
-   ![image](https://github.com/user-attachments/assets/4c5834f8-459f-4063-bd82-3e65237c6b1d)
+    ![image](https://github.com/user-attachments/assets/82076f64-6a7f-4235-942d-d83e32ed6ea1)
 
 10. Wählen Sie **Speichern**.
 
 11. Wählen Sie am unteren Bildschirmrand **Überprüfen + erstellen** aus, und wenn die Validierung erfolgreich ist, wählen Sie **Erstellen** aus.
 
-    ![image](https://github.com/user-attachments/assets/4fd02061-2349-42c4-8582-c7178f9b7eb6)
+     ![image](https://github.com/user-attachments/assets/c53a04e4-d760-4e28-b998-1d48a56702f1)
 
 ### Mithilfe einer Anwendungssicherheitsgruppe können Sie Server mit ähnlichen Funktionen gruppieren, wie etwa Webserver.
 
 Mithilfe einer Anwendungssicherheitsgruppe (ASG) können Sie Server mit ähnlichen Funktionen gruppieren (z. B. Webserver).
 
-1. Geben Sie im Suchfeld oben im Portal **Anwendungssicherheitsgruppe** ein. Wählen Sie in den Suchergebnissen **Anwendungssicherheitsgruppen** aus.
+1. Geben Sie im Suchfeld oben im Portal **Anwendungssicherheitsgruppen** ein. Wählen Sie in den Suchergebnissen **Anwendungssicherheitsgruppen** aus.
 
 2. Auf der Seite **Anwendungssicherheitsgruppen** wählen Sie **+ Erstellen.**
 
@@ -148,11 +148,11 @@ Eine Netzwerksicherheitsgruppe (NSG) schützt den Netzwerkdatenverkehr in Ihrem 
 
 4. Wählen Sie auf der Seite **nsg-1 | Subnetze** die Option „+ **Verknüpfen:**“ aus.
 
- ![image](https://github.com/MicrosoftLearning/Secure-Azure-services-and-workloads-with-Microsoft-Defender-for-Cloud-regulatory-compliance-controls/assets/91347931/3b2004f6-963f-43df-9d05-3999d2e97d76)
+   ![image](https://github.com/user-attachments/assets/bfc18dd3-3345-4c05-9981-4f479d5f7c7e)
 
-5. Wählen Sie unter **Subnetz zuordnen** die Option **vnet-1 (az-rg-1)** für **Virtuelles Netzwerk** aus.
+6. Wählen Sie unter **Subnetz zuordnen** die Option **vnet-1 (az-rg-1)** für **Virtuelles Netzwerk** aus.
 
-6. Wählen Sie **subnet-1** als **Subnetz** aus, und klicken Sie dann auf **OK**.
+7. Wählen Sie **subnet-1** als **Subnetz** aus, und klicken Sie dann auf **OK**.
 
 ### Erstellen Sie Sicherheitsregeln für die Netzwerksicherheitsgruppe mit dem Subnetz des zuvor erstellten virtuellen Netzwerks.
 
@@ -196,7 +196,7 @@ Eine Netzwerksicherheitsgruppe (NSG) schützt den Netzwerkdatenverkehr in Ihrem 
 
 ### Erstellen Sie zwei virtuelle Computer (VMs) im zuvor erstellten virtuellen Netzwerk.
 
-1. Suchen Sie im Portal nach **Virtuelle Computer**, und klicken Sie darauf.
+1. Geben Sie im Suchfeld oben im Portal den Begriff **Virtuelle Computer** ein. Wählen Sie in den Suchergebnissen **Virtuelle Computer** aus.
 
 2. Wählen Sie unter **VM** die Option **+ Erstellen** und dann **Azure-VM** aus.
    
@@ -217,7 +217,6 @@ Eine Netzwerksicherheitsgruppe (NSG) schützt den Netzwerkdatenverkehr in Ihrem 
    |Mit Azure Spot-Rabatt ausführen|Lassen Sie die Standardeinstellung deaktiviert.|
    |Größe|Behalten Sie die Standardeinstellung bei: Standard_D2s_v3-2 vcpus, 8 GiB Arbeitsspeicher.|
    |**Administratorkonto**|
-   |Authentifizierungsart|Wählen Sie **Kennwort** aus.|
    |Benutzername|Geben Sie **Tenantadmin1** ein.|
    |Kennwort|Geben Sie **Superuser#150** ein.|
    |Kennwort bestätigen|Geben Sie erneut **Superuser#150** ein.|
@@ -232,11 +231,11 @@ Eine Netzwerksicherheitsgruppe (NSG) schützt den Netzwerkdatenverkehr in Ihrem 
    |---|---|
    |**Netzwerkschnittstelle**|
    |Virtuelles Netzwerk|Wählen Sie **vnet-1** aus.|
-   |Subnet|Wählen Sie **Standard (10.0.0.0/24)** aus.|
-   |Öffentliche IP-Adresse|Belassen Sie die Standardeinstellung als neue öffentliche IP.|
+   |Subnet|Belassen Sie die Standardeinstellung auf subnet-1 (10.0.0.0/24).|
+   |Öffentliche IP-Adresse|Belassen Sie die Standardeinstellung als (new) vm-1-ip.|
    |NIC-Netzwerksicherheitsgruppe|Wählen Sie **Keine**.|
    
-6. Wählen Sie die Registerkarte **Überprüfen + erstellen** aus, oder klicken Sie unten auf der Seite auf die Schaltfläche **Überprüfen + erstellen**.
+6. Um fortzufahren, wählen Sie unten auf der Seite die Schaltfläche **Überprüfen + erstellen** aus.
 
 7. Klicken Sie auf **Erstellen**. Die Bereitstellung der VM kann einige Minuten dauern.
   
@@ -250,19 +249,19 @@ Eine Netzwerksicherheitsgruppe (NSG) schützt den Netzwerkdatenverkehr in Ihrem 
 
 >**Hinweis**: Als Sie die VMs erstellt haben, hat Azure eine Netzwerkschnittstelle für jede VM erstellt und an die VM angefügt. Fügen Sie die Netzwerkschnittstellen der einzelnen virtuellen Computer einer der Anwendungssicherheitsgruppen hinzu, die Sie zuvor erstellt haben:
 
-1. Geben Sie im Suchfeld oben im Portal den Suchbegriff **Virtueller Computer** ein. Wählen Sie in den Suchergebnissen **Virtuelle Computer** aus.
+1. Geben Sie im Suchfeld oben im Portal den Begriff **Virtuelle Computer** ein. Wählen Sie in den Suchergebnissen **Virtuelle Computer** aus.
 
 2. Wählen Sie **vm-1** aus.
  
 3. Wählen Sie **Netzwerke** aus dem Abschnitt von **vm-1.**
 
-4. Wählen Sie **Anwendungssicherheitsgruppen** aus dem Abschnitt **Netzwerke** von **vm-1. Wählen Sie **+ Anwendungssicherheitsgruppen hinzufügen**
+4. Wählen Sie **Anwendungssicherheitsgruppen** aus dem Abschnitt **Netzwerke** von **vm-1. Wählen Sie **+ Anwendungssicherheitsgruppen hinzufügen** aus.
 
 5. Wählen Sie in der Vorlage **Anwendungssicherheitsgruppen hinzufügen** die Option **asg-mgmt** aus der Vorlage **Anwendungssicherheitsgruppen** aus und klicken Sie dann auf die Schaltfläche **Hinzufügen** unten auf der Vorlagenseite.
 
-![image](https://github.com/MicrosoftLearning/Secure-Azure-with-Microsoft-Defender-Cloud-Compliance-Controls/assets/91347931/dd17aeba-8e16-431b-b921-527367fea484)
+   ![image](https://github.com/user-attachments/assets/9bb38a91-8aa6-427b-9b6d-b01c5333ad4c)
 
-6. Wiederholen Sie die vorherigen Schritte für **vm-2** und wählen Sie **asg-web** in der Vorlage **Anwendungssicherheitsgruppen**.
+7. Wiederholen Sie die vorherigen Schritte für **vm-2** und wählen Sie **asg-web** in der Vorlage **Anwendungssicherheitsgruppen**.
 
 > **Ergebnisse**: Sie haben eine virtuelle Netzwerkinfrastruktur erstellt und Netzwerkdatenverkehr mit einer Netzwerksicherheitsgruppe mithilfe des Azure-Portals gefiltert.
 

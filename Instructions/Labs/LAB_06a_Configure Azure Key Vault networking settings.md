@@ -25,10 +25,10 @@ Sie können das Azure-Portal verwenden, um die Azure Key Vault-Netztechnologieei
 ### Verwenden Sie das Azure-Portal, um einen Azure Key Vault zu erstellen.
 
 1. Starten Sie eine Browsersitzung, und melden Sie sich beim [Azure-Portal-Menü](https://portal.azure.com/) an.
-   
-2. Geben Sie im Suchfeld im Azure-Portal den Wert **Key Vault** ein.
+  
+2. Geben Sie am oben im Portal **Schlüsseltresore** in das Suchfeld ein. Wählen Sie **Schlüsseltresore** in den Suchergebnissen aus.
 
-3. Wählen Sie in der Liste „Ergebnisse“ die Option **Key Vault** aus.
+3. Wählen Sie in der Liste „Ergebnisse“ die Option **Schlüsseltresore** aus.
 
 4. Klicken Sie im Abschnitt „Schlüsseltresore“ auf **Erstellen**.
 
@@ -45,13 +45,13 @@ Sie können das Azure-Portal verwenden, um die Azure Key Vault-Netztechnologieei
    |Tarif|Belassen Sie die Standardeinstellung auf Standard.|
    |Aufbewahrungsdauer für gelöschte Tresore in Tagen|Belassen Sie die Standardeinstellung bei 90.|
 
-7. Wählen Sie die Registerkarte **Überprüfen + erstellen** aus, oder wählen Sie unten auf der Seite die blaue Schaltfläche „Überprüfen + Erstellen“ aus.
+6. Wählen Sie die Registerkarte **Überprüfen + erstellen** aus, oder wählen Sie unten auf der Seite die blaue Schaltfläche „Überprüfen + Erstellen“ aus.
   
-8. Klicken Sie auf **Erstellen**.
+7. Klicken Sie auf **Erstellen**.
 
 ### Konfigurieren von Einstellung für Key Vault-Firewalls und virtuelle Netzwerke.
 
-1. Geben Sie im Suchfeld im Azure-Portal den Wert **Key Vault** ein.
+1. Geben Sie im Suchfeld im Azure-Portal **Schlüsseltresore** ein.
 
 2. Navigieren Sie zum zuvor erstellten Schlüsseltresor.
 

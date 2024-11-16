@@ -32,13 +32,15 @@ Die Datensammlungsregeln (DCRs) legen fest, welche Daten erfasst werden sollen, 
 
 >**Hinweis**: Erstellen Sie die Datensammlungsregel in derselben Region wie Ihren Log Analytics- oder Azure Monitor-Arbeitsbereich. Sie können es mit Maschinen oder Containern aus jeder Abonnement- oder Ressourcengruppe innerhalb des Mandanten verknüpfen. Der Azure Monitor-Agent wird automatisch auf virtuellen Azure-Ressourcen installiert.
 
-1. Geben Sie in das Suchfeld oben auf dem Portal **Datensammlungsregel** ein. Wählen Sie **Datensammlungsregeln** in den Suchergebnissen  aus.
+1. Starten Sie eine Browsersitzung, und melden Sie sich beim [Azure-Portal-Menü](https://portal.azure.com/) an.
   
-2. Wählen Sie auf der Seite mit den **Datensammlungsregeln** die Option **Erstellen** aus.
+3. Geben Sie in das Suchfeld oben auf dem Portal **Datensammlungsregel** ein. Wählen Sie **Datensammlungsregeln** in den Suchergebnissen  aus.
   
-   ![image](https://github.com/user-attachments/assets/99b9ac51-f2f4-466f-80bb-79d74874b573)
+4. Wählen Sie auf der Seite mit den **Datensammlungsregeln** die Option **Erstellen** aus.
+  
+    ![image](https://github.com/user-attachments/assets/a472bc6f-fa96-4615-a67c-c99e8b9ce7a4)
 
-3. Geben Sie auf der Seite **Grundlagen** der **Regel zur Datensammlung erstellen** die folgenden Einstellungen an (lassen Sie die anderen auf ihren Standardwerten):
+5. Geben Sie auf der Seite **Grundlagen** der **Regel zur Datensammlung erstellen** die folgenden Einstellungen an (lassen Sie die anderen auf ihren Standardwerten):
 
     |Einstellung|Wert|
     |---|---|
@@ -50,29 +52,29 @@ Die Datensammlungsregeln (DCRs) legen fest, welche Daten erfasst werden sollen, 
     |Plattformtyp|**Windows**|
     |Datensammlungsendpunkt|Belassen Sie die Standardeinstellung auf „Keine“|
 
-    ![image](https://github.com/user-attachments/assets/35c527cf-499d-44b9-966f-0114b8643ef2)
+   ![image](https://github.com/user-attachments/assets/6c63c48f-f7a9-4fb2-8fc0-e22084cd5013)
 
-4. Klicken Sie auf die Schaltfläche am Ende der Seite **Grundlagen** mit der Bezeichnung **Weiter: Ressourcen > fortfahren.**
+6. Klicken Sie auf die Schaltfläche am Ende der Seite **Grundlagen** mit der Bezeichnung **Weiter: Ressourcen > fortfahren.**
    
-5. Wählen Sie auf der Seite **Ressourcen** die Option **+ Ressourcen hinzufügen** aus.
+7. Wählen Sie auf der Seite **Ressourcen** die Option **+ Ressourcen hinzufügen** aus.
 
-    ![image](https://github.com/user-attachments/assets/6aabf2c9-bea2-47c1-9b0b-bf131cdec4e3)
+   ![image](https://github.com/user-attachments/assets/7e45996b-478b-4be4-9df3-df6127da6cb4)
 
-6. Aktivieren Sie in der Vorlage **Bereich auswählen** das Kontrollkästchen **Abonnement** im Bereich **Umfang**.
+8. Aktivieren Sie in der Vorlage **Bereich auswählen** das Kontrollkästchen **Abonnement** im Bereich **Umfang**.
 
-    ![image](https://github.com/user-attachments/assets/2215e8cd-5047-4fc6-91ba-b2c645571bbd)
+   ![image](https://github.com/user-attachments/assets/0d228e47-039e-4418-ae66-025957e368bc)
 
-7. Klicken Sie unten in der Vorlage **Wählen Sie einen Bereich aus** auf **Anwenden**.
+9. Klicken Sie unten in der Vorlage **Wählen Sie einen Bereich aus** auf **Anwenden**.
   
-8. Wählen Sie unten auf der Seite **Ressourcen** die Option **Weiter: Sammeln und liefern >** aus.
+10. Wählen Sie unten auf der Seite **Ressourcen** die Option **Weiter: Sammeln und liefern >** aus.
 
-    ![image](https://github.com/user-attachments/assets/717226c3-5ce0-454f-93a4-11b0e67d5a23)
+    ![image](https://github.com/user-attachments/assets/95556211-654f-4810-98a0-5cd8fac13bff)  
 
-9. Klicken Sie auf der Seite **Sammeln und Bereitstellen** auf **+ Datenquelle hinzufügen.**
+11. Klicken Sie auf der Seite **Sammeln und Bereitstellen** auf **+ Datenquelle hinzufügen.**
 
-    ![image](https://github.com/user-attachments/assets/0809cf5b-a460-40d1-8508-e42ba7ce78c1)
+    ![image](https://github.com/user-attachments/assets/8274b0c1-8617-4889-9aef-78e050f2bd00)
 
-10. Wählen Sie auf der Vorlage **Datenquelle hinzufügen** unter **Datenquellentyp** die folgenden Einstellungen aus.
+12. Wählen Sie auf der Vorlage **Datenquelle hinzufügen** unter **Datenquellentyp** die folgenden Einstellungen aus:
     
     |Einstellung|Wert|
     |---|---|
@@ -85,11 +87,11 @@ Die Datensammlungsregeln (DCRs) legen fest, welche Daten erfasst werden sollen, 
     |Sicherheit|**Erfolgreiche Überwachung**, **Fehlgeschlagene Überwachung**|
     |System|**Kritisch**, **Fehler**, **Warnung**|
 
-    ![image](https://github.com/user-attachments/assets/5bc891ea-8cef-4baa-95c4-a432364179b1)
+    ![image](https://github.com/user-attachments/assets/33039994-0613-40f4-9c55-03f795b38b9b)
 
-12. Wählen Sie unten in der Vorlage **Datenquelle hinzufügen** die Option **Weiter: Ziel >** aus.
-   
-13. Wählen Sie in der Vorlage **Datenquelle hinzufügen** auf der Registerkarte **Ziel** die folgenden Einstellungen aus.
+13. Wählen Sie unten in der Vorlage **Datenquelle hinzufügen** die Option **Weiter: Ziel >** aus.
+
+14. Wählen Sie in der Vorlage **Datenquelle hinzufügen** auf der Registerkarte **Ziel** die folgenden Einstellungen aus.
     
     |Einstellung|Wert|
     |---|---|
@@ -99,16 +101,16 @@ Die Datensammlungsregeln (DCRs) legen fest, welche Daten erfasst werden sollen, 
     |Subscription|Wählen Sie Ihr Abonnement aus.|
     |Zieldetails|**azwrkspc1a (az-rg-1**)|
 
-    ![image](https://github.com/user-attachments/assets/e00c17c8-5a70-4caa-8504-92f482cc5e57)
+     ![image](https://github.com/user-attachments/assets/dc2d2906-4a57-4df9-a33c-fd6ae34a8457)
 
-14. Wählen Sie unten in der Vorlage **Datenquelle hinzufügen** die Option **Datenquelle hinzufügen** aus.
+15. Wählen Sie unten in der Vorlage **Datenquelle hinzufügen** die Option **Datenquelle hinzufügen** aus.
+
+16. Wählen Sie unten auf der Seite **Sammeln und liefern** die Option **Überprüfen + erstellen** aus.
 
     ![image](https://github.com/user-attachments/assets/4277089c-971c-4334-a49d-6ac6bfe93ff4)
 
-15. Wählen Sie unten auf der Seite **Sammeln und liefern** die Option **Überprüfen + erstellen** aus.
+17. Wählen Sie unten auf der Seite **Überprüfen + erstellen** die Option **Erstellen** aus.
 
-    ![image](https://github.com/user-attachments/assets/0235fed9-6309-444c-9269-b9dbd1118b63)
-
-16. Wählen Sie unten auf der Seite **Überprüfen + erstellen** die Option **Erstellen** aus.
+    ![image](https://github.com/user-attachments/assets/b532f92e-af10-4b4d-bb52-10d15ad38d4a)
 
 > **Ergebnisse**: Sie haben eine Regel für die Datensammlung erstellt und den Azure Monitor-Agent installiert.
