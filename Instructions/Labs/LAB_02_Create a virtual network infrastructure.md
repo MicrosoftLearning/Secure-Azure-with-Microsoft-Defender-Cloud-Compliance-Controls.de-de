@@ -87,7 +87,7 @@ Mithilfe einer Anwendungssicherheitsgruppe (ASG) können Sie Server mit ähnlich
    |---|---|
    |**Projektdetails**|
    |Subscription|Wählen Sie Ihr Abonnement aus.|
-   |Resource group|Wählen Sie **az-rg-1** aus.|
+   |Ressourcengruppe|Wählen Sie **az-rg-1** aus.|
    |**Instanzendetails**|
    |Name|Geben Sie **asg-web** ein.|
    |Region|Wählen Sie **USA, Osten** aus.|  
@@ -102,7 +102,7 @@ Mithilfe einer Anwendungssicherheitsgruppe (ASG) können Sie Server mit ähnlich
    |---|---|
    |**Projektdetails**|
    |Subscription|Wählen Sie Ihr Abonnement aus.|
-   |Resource group|Wählen Sie **az-rg-1** aus.|
+   |Ressourcengruppe|Wählen Sie **az-rg-1** aus.|
    |**Instanzendetails**|
    |Name|Geben Sie **asg-mgmt** ein.|
    |Region|Wählen Sie **USA, Osten** aus.|
@@ -127,7 +127,7 @@ Eine Netzwerksicherheitsgruppe (NSG) schützt den Netzwerkdatenverkehr in Ihrem 
    |---|---|
    |**Projektdetails**|
    |Subscription|Wählen Sie Ihr Abonnement aus.|
-   |Resource group|Wählen Sie **az-rg-1** aus.|
+   |Ressourcengruppe|Wählen Sie **az-rg-1** aus.|
    |**Instanzendetails**|
    |Name|Geben Sie **nsg-1** ein.|
    |Region|Wählen Sie **USA, Osten** aus.|  
@@ -206,7 +206,7 @@ Eine Netzwerksicherheitsgruppe (NSG) schützt den Netzwerkdatenverkehr in Ihrem 
    |---|---|
    |**Projektdetails**|
    |Abonnement|Wählen Sie Ihr Abonnementaus.|
-   |Resource group|Wählen Sie **az-rg-1** aus.|
+   |Ressourcengruppe|Wählen Sie **az-rg-1** aus.|
    |**Instanzendetails**|
    |Name des virtuellen Computers|Geben Sie **vm-1** ein.|
    |Region|Wählen Sie **(USA) USA, Osten** aus.|
