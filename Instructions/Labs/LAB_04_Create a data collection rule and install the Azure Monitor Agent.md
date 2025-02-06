@@ -46,8 +46,8 @@ Die Datensammlungsregeln (DCRs) legen fest, welche Daten erfasst werden sollen, 
     |---|---|
     |**Regeldetails**|
     |Regelname|**dcr-1**|
-    |Subscription|Wählen Sie Ihr Abonnement aus.|
-    |Resource group|**az-rg-1**|
+    |Abonnement|Wählen Sie Ihr Abonnement aus.|
+    |Ressourcengruppe|**az-rg-1**|
     |Region|**USA, Osten**|
     |Plattformtyp|**Windows**|
     |Datensammlungsendpunkt|Belassen Sie die Standardeinstellung auf „Keine“|
