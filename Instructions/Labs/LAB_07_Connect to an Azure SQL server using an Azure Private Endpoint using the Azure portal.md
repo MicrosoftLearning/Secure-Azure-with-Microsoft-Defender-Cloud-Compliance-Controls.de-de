@@ -39,7 +39,7 @@ Der private Azure-Endpunkt ist der grundlegende Baustein für Private Link in Az
    |Einstellung|Wert|
    |---|---|
    |Subscription|Wählen Sie Ihr Abonnement aus.|
-   |Resource group|Wählen Sie **az-rg-1** aus.|
+   |Ressourcengruppe|Wählen Sie **az-rg-1** aus.|
    |**Instanzendetails**|
    |Name des virtuellen Netzwerks|Geben Sie **vnet-2** ein.|
    |Region|Wählen Sie **(USA) USA, Osten** aus.|  
@@ -95,7 +95,7 @@ Der private Azure-Endpunkt ist der grundlegende Baustein für Private Link in Az
    |Einstellung|Wert|
    |---|---|
    |Abonnement|Wählen Sie Ihr Abonnementaus.|
-   |Resource group|Wählen Sie **az-rg-1** aus.|
+   |Ressourcengruppe|Wählen Sie **az-rg-1** aus.|
    |**Instanzendetails**|
    |Name des virtuellen Computers|Geben Sie **vm-3** ein.|
    |Region|Wählen Sie **(USA) USA, Osten** aus.|
@@ -144,7 +144,7 @@ Der private Azure-Endpunkt ist der grundlegende Baustein für Private Link in Az
    |Einstellung|Wert|
    |---|---|
    |Subscription|Wählen Sie Ihr Abonnement aus.|
-   |Resource group|Wählen Sie **az-rg-1** aus.|
+   |Ressourcengruppe|Wählen Sie **az-rg-1** aus.|
    |**Datenbankdetails**|
    |Datenbankname|Geben Sie **az-sql-db1a** ein.|
    |Server|Wählen Sie **Neu erstellen**.|
@@ -190,7 +190,7 @@ Der private Azure-Endpunkt ist der grundlegende Baustein für Private Link in Az
        |Einstellung|Wert|
        |---|---|
        |Subscription|Wählen Sie Ihr Abonnement aus.|
-       |Resource group|Wählen Sie **az-rg-1** aus.|
+       |Ressourcengruppe|Wählen Sie **az-rg-1** aus.|
        |Location|Wählen Sie **USA, Osten** aus.|
        |Name|Geben Sie **az-pe1a** ein.|
        |Zielunterressource|Belassen Sie die Standardeinstellung bei SqlServer.|
